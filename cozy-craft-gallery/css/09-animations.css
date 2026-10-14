@@ -1,0 +1,178 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    transition: transform .12s steps(2);
+}
+
+.btn:hover {
+    transform: translate(-2px, -2px);
+}
+
+.btn:active {
+    transform: translate(3px, 3px);
+}
+
+.main-nav a {
+    transition: transform .12s steps(2);
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    transform: translate(-1px, -2px);
+}
+
+.product-card {
+    transition: transform .2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.social-btn {
+    transition: width .25s steps(5), transform .12s steps(2);
+}
+
+.social-btn:hover,
+.social-btn:focus-visible {
+    transform: translate(-1px, -3px);
+}
+
+.cart-fab {
+    transition: transform .12s steps(2);
+}
+
+.cart-fab:hover {
+    transform: translate(-2px, -2px);
+}
+
+.cart-fab:active {
+    transform: translate(3px, 3px);
+}
+
+.design-card {
+    transition: transform .12s steps(2);
+}
+
+.design-card:hover {
+    transform: translate(-1px, -2px);
+}
+
+.chibi-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.chibi-walker {
+    position: absolute;
+    bottom: 0;
+    will-change: transform;
+}
+
+.chibi-walker--girl {
+    left: 8px;
+    animation: walk-right 14s ease-in-out infinite alternate;
+}
+
+.chibi-walker--boy {
+    right: 92px;
+    animation: walk-left 16s ease-in-out infinite alternate;
+}
+
+.chibi {
+    width: 100px;
+    height: auto;
+    image-rendering: pixelated;
+    opacity: .95;
+    animation: bounce 1.6s steps(6, jump-none) infinite;
+}
+
+.chibi--boy {
+    animation-delay: -.8s;
+}
+
+.chibi-walker::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 28px;
+    height: 28px;
+    background: url("../assets/pixel-heart.svg") center / contain no-repeat;
+    image-rendering: pixelated;
+}
+
+.chibi-walker--girl::after {
+    right: -14px;
+}
+
+.chibi-walker--boy::after {
+    left: -14px;
+    background-image: url("../assets/pixel-sparkle.svg");
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes walk-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(min(150px, 12vw));
+    }
+}
+
+@keyframes walk-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(max(-150px, -12vw));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+.field label {
+    transition: transform .2s ease, color .2s ease;
+}
+
+.field-line {
+    transition: transform .35s ease;
+}
+
+.login-card {
+    animation: pop-in .5s ease both;
+}
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(.97);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

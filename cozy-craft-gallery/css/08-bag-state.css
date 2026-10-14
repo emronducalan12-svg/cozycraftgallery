@@ -1,0 +1,393 @@
+#q-crochet-bag-1:checked~main .add-crochet-bag .a1,#q-crochet-bag-2:checked~main .add-crochet-bag .a1,#q-crochet-bag-3:checked~main .add-crochet-bag .a1,#q-crochet-bag-4:checked~main .add-crochet-bag .a1,#q-crochet-bag-5:checked~main .add-crochet-bag .a1{display:none}
+#q-crochet-bag-1:checked~main .add-crochet-bag .a2{display:flex}
+#q-crochet-bag-2:checked~main .add-crochet-bag .a3{display:flex}
+#q-crochet-bag-3:checked~main .add-crochet-bag .a4{display:flex}
+#q-crochet-bag-4:checked~main .add-crochet-bag .a5{display:flex}
+#q-crochet-bag-5:checked~main .add-crochet-bag .amax{display:flex}
+#q-crochet-bag-1:checked~main .row-crochet-bag{display:grid;--q:"1";--sub:"\20b1 250";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-bag-1:checked~.tally .t-crochet-bag{counter-increment:bagitems 1 bagtotal 250}
+#q-crochet-bag-2:checked~main .row-crochet-bag{display:grid;--q:"2";--sub:"\20b1 500";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-bag-2:checked~.tally .t-crochet-bag{counter-increment:bagitems 2 bagtotal 500}
+#q-crochet-bag-3:checked~main .row-crochet-bag{display:grid;--q:"3";--sub:"\20b1 750";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-bag-3:checked~.tally .t-crochet-bag{counter-increment:bagitems 3 bagtotal 750}
+#q-crochet-bag-4:checked~main .row-crochet-bag{display:grid;--q:"4";--sub:"\20b1 1000";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-bag-4:checked~.tally .t-crochet-bag{counter-increment:bagitems 4 bagtotal 1000}
+#q-crochet-bag-5:checked~main .row-crochet-bag{display:grid;--q:"5";--sub:"\20b1 1250";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-bag-5:checked~.tally .t-crochet-bag{counter-increment:bagitems 5 bagtotal 1250}
+
+#q-crochet-blanket-1:checked~main .add-crochet-blanket .a1,#q-crochet-blanket-2:checked~main .add-crochet-blanket .a1,#q-crochet-blanket-3:checked~main .add-crochet-blanket .a1,#q-crochet-blanket-4:checked~main .add-crochet-blanket .a1,#q-crochet-blanket-5:checked~main .add-crochet-blanket .a1{display:none}
+#q-crochet-blanket-1:checked~main .add-crochet-blanket .a2{display:flex}
+#q-crochet-blanket-2:checked~main .add-crochet-blanket .a3{display:flex}
+#q-crochet-blanket-3:checked~main .add-crochet-blanket .a4{display:flex}
+#q-crochet-blanket-4:checked~main .add-crochet-blanket .a5{display:flex}
+#q-crochet-blanket-5:checked~main .add-crochet-blanket .amax{display:flex}
+#q-crochet-blanket-1:checked~main .row-crochet-blanket{display:grid;--q:"1";--sub:"\20b1 280";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-blanket-1:checked~.tally .t-crochet-blanket{counter-increment:bagitems 1 bagtotal 280}
+#q-crochet-blanket-2:checked~main .row-crochet-blanket{display:grid;--q:"2";--sub:"\20b1 560";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-blanket-2:checked~.tally .t-crochet-blanket{counter-increment:bagitems 2 bagtotal 560}
+#q-crochet-blanket-3:checked~main .row-crochet-blanket{display:grid;--q:"3";--sub:"\20b1 840";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-blanket-3:checked~.tally .t-crochet-blanket{counter-increment:bagitems 3 bagtotal 840}
+#q-crochet-blanket-4:checked~main .row-crochet-blanket{display:grid;--q:"4";--sub:"\20b1 1120";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-blanket-4:checked~.tally .t-crochet-blanket{counter-increment:bagitems 4 bagtotal 1120}
+#q-crochet-blanket-5:checked~main .row-crochet-blanket{display:grid;--q:"5";--sub:"\20b1 1400";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-blanket-5:checked~.tally .t-crochet-blanket{counter-increment:bagitems 5 bagtotal 1400}
+
+#q-crochet-keychains-1:checked~main .add-crochet-keychains .a1,#q-crochet-keychains-2:checked~main .add-crochet-keychains .a1,#q-crochet-keychains-3:checked~main .add-crochet-keychains .a1,#q-crochet-keychains-4:checked~main .add-crochet-keychains .a1,#q-crochet-keychains-5:checked~main .add-crochet-keychains .a1{display:none}
+#q-crochet-keychains-1:checked~main .add-crochet-keychains .a2{display:flex}
+#q-crochet-keychains-2:checked~main .add-crochet-keychains .a3{display:flex}
+#q-crochet-keychains-3:checked~main .add-crochet-keychains .a4{display:flex}
+#q-crochet-keychains-4:checked~main .add-crochet-keychains .a5{display:flex}
+#q-crochet-keychains-5:checked~main .add-crochet-keychains .amax{display:flex}
+#q-crochet-keychains-1:checked~main .row-crochet-keychains{display:grid;--q:"1";--sub:"\20b1 65";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-keychains-1:checked~.tally .t-crochet-keychains{counter-increment:bagitems 1 bagtotal 65}
+#q-crochet-keychains-2:checked~main .row-crochet-keychains{display:grid;--q:"2";--sub:"\20b1 130";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-keychains-2:checked~.tally .t-crochet-keychains{counter-increment:bagitems 2 bagtotal 130}
+#q-crochet-keychains-3:checked~main .row-crochet-keychains{display:grid;--q:"3";--sub:"\20b1 195";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-keychains-3:checked~.tally .t-crochet-keychains{counter-increment:bagitems 3 bagtotal 195}
+#q-crochet-keychains-4:checked~main .row-crochet-keychains{display:grid;--q:"4";--sub:"\20b1 260";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-keychains-4:checked~.tally .t-crochet-keychains{counter-increment:bagitems 4 bagtotal 260}
+#q-crochet-keychains-5:checked~main .row-crochet-keychains{display:grid;--q:"5";--sub:"\20b1 325";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-keychains-5:checked~.tally .t-crochet-keychains{counter-increment:bagitems 5 bagtotal 325}
+
+#q-crochet-coin-purse-1:checked~main .add-crochet-coin-purse .a1,#q-crochet-coin-purse-2:checked~main .add-crochet-coin-purse .a1,#q-crochet-coin-purse-3:checked~main .add-crochet-coin-purse .a1,#q-crochet-coin-purse-4:checked~main .add-crochet-coin-purse .a1,#q-crochet-coin-purse-5:checked~main .add-crochet-coin-purse .a1{display:none}
+#q-crochet-coin-purse-1:checked~main .add-crochet-coin-purse .a2{display:flex}
+#q-crochet-coin-purse-2:checked~main .add-crochet-coin-purse .a3{display:flex}
+#q-crochet-coin-purse-3:checked~main .add-crochet-coin-purse .a4{display:flex}
+#q-crochet-coin-purse-4:checked~main .add-crochet-coin-purse .a5{display:flex}
+#q-crochet-coin-purse-5:checked~main .add-crochet-coin-purse .amax{display:flex}
+#q-crochet-coin-purse-1:checked~main .row-crochet-coin-purse{display:grid;--q:"1";--sub:"\20b1 80";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-coin-purse-1:checked~.tally .t-crochet-coin-purse{counter-increment:bagitems 1 bagtotal 80}
+#q-crochet-coin-purse-2:checked~main .row-crochet-coin-purse{display:grid;--q:"2";--sub:"\20b1 160";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-coin-purse-2:checked~.tally .t-crochet-coin-purse{counter-increment:bagitems 2 bagtotal 160}
+#q-crochet-coin-purse-3:checked~main .row-crochet-coin-purse{display:grid;--q:"3";--sub:"\20b1 240";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-coin-purse-3:checked~.tally .t-crochet-coin-purse{counter-increment:bagitems 3 bagtotal 240}
+#q-crochet-coin-purse-4:checked~main .row-crochet-coin-purse{display:grid;--q:"4";--sub:"\20b1 320";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-coin-purse-4:checked~.tally .t-crochet-coin-purse{counter-increment:bagitems 4 bagtotal 320}
+#q-crochet-coin-purse-5:checked~main .row-crochet-coin-purse{display:grid;--q:"5";--sub:"\20b1 400";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-coin-purse-5:checked~.tally .t-crochet-coin-purse{counter-increment:bagitems 5 bagtotal 400}
+
+#q-crochet-flower-bouquets-1:checked~main .add-crochet-flower-bouquets .a1,#q-crochet-flower-bouquets-2:checked~main .add-crochet-flower-bouquets .a1,#q-crochet-flower-bouquets-3:checked~main .add-crochet-flower-bouquets .a1,#q-crochet-flower-bouquets-4:checked~main .add-crochet-flower-bouquets .a1,#q-crochet-flower-bouquets-5:checked~main .add-crochet-flower-bouquets .a1{display:none}
+#q-crochet-flower-bouquets-1:checked~main .add-crochet-flower-bouquets .a2{display:flex}
+#q-crochet-flower-bouquets-2:checked~main .add-crochet-flower-bouquets .a3{display:flex}
+#q-crochet-flower-bouquets-3:checked~main .add-crochet-flower-bouquets .a4{display:flex}
+#q-crochet-flower-bouquets-4:checked~main .add-crochet-flower-bouquets .a5{display:flex}
+#q-crochet-flower-bouquets-5:checked~main .add-crochet-flower-bouquets .amax{display:flex}
+#q-crochet-flower-bouquets-1:checked~main .row-crochet-flower-bouquets{display:grid;--q:"1";--sub:"\20b1 200";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-flower-bouquets-1:checked~.tally .t-crochet-flower-bouquets{counter-increment:bagitems 1 bagtotal 200}
+#q-crochet-flower-bouquets-2:checked~main .row-crochet-flower-bouquets{display:grid;--q:"2";--sub:"\20b1 400";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-flower-bouquets-2:checked~.tally .t-crochet-flower-bouquets{counter-increment:bagitems 2 bagtotal 400}
+#q-crochet-flower-bouquets-3:checked~main .row-crochet-flower-bouquets{display:grid;--q:"3";--sub:"\20b1 600";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-flower-bouquets-3:checked~.tally .t-crochet-flower-bouquets{counter-increment:bagitems 3 bagtotal 600}
+#q-crochet-flower-bouquets-4:checked~main .row-crochet-flower-bouquets{display:grid;--q:"4";--sub:"\20b1 800";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-flower-bouquets-4:checked~.tally .t-crochet-flower-bouquets{counter-increment:bagitems 4 bagtotal 800}
+#q-crochet-flower-bouquets-5:checked~main .row-crochet-flower-bouquets{display:grid;--q:"5";--sub:"\20b1 1000";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-flower-bouquets-5:checked~.tally .t-crochet-flower-bouquets{counter-increment:bagitems 5 bagtotal 1000}
+
+#q-crochet-headband-1:checked~main .add-crochet-headband .a1,#q-crochet-headband-2:checked~main .add-crochet-headband .a1,#q-crochet-headband-3:checked~main .add-crochet-headband .a1,#q-crochet-headband-4:checked~main .add-crochet-headband .a1,#q-crochet-headband-5:checked~main .add-crochet-headband .a1{display:none}
+#q-crochet-headband-1:checked~main .add-crochet-headband .a2{display:flex}
+#q-crochet-headband-2:checked~main .add-crochet-headband .a3{display:flex}
+#q-crochet-headband-3:checked~main .add-crochet-headband .a4{display:flex}
+#q-crochet-headband-4:checked~main .add-crochet-headband .a5{display:flex}
+#q-crochet-headband-5:checked~main .add-crochet-headband .amax{display:flex}
+#q-crochet-headband-1:checked~main .row-crochet-headband{display:grid;--q:"1";--sub:"\20b1 120";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-headband-1:checked~.tally .t-crochet-headband{counter-increment:bagitems 1 bagtotal 120}
+#q-crochet-headband-2:checked~main .row-crochet-headband{display:grid;--q:"2";--sub:"\20b1 240";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-headband-2:checked~.tally .t-crochet-headband{counter-increment:bagitems 2 bagtotal 240}
+#q-crochet-headband-3:checked~main .row-crochet-headband{display:grid;--q:"3";--sub:"\20b1 360";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-headband-3:checked~.tally .t-crochet-headband{counter-increment:bagitems 3 bagtotal 360}
+#q-crochet-headband-4:checked~main .row-crochet-headband{display:grid;--q:"4";--sub:"\20b1 480";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-headband-4:checked~.tally .t-crochet-headband{counter-increment:bagitems 4 bagtotal 480}
+#q-crochet-headband-5:checked~main .row-crochet-headband{display:grid;--q:"5";--sub:"\20b1 600";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-headband-5:checked~.tally .t-crochet-headband{counter-increment:bagitems 5 bagtotal 600}
+
+#q-crochet-plushies-1:checked~main .add-crochet-plushies .a1,#q-crochet-plushies-2:checked~main .add-crochet-plushies .a1,#q-crochet-plushies-3:checked~main .add-crochet-plushies .a1,#q-crochet-plushies-4:checked~main .add-crochet-plushies .a1,#q-crochet-plushies-5:checked~main .add-crochet-plushies .a1{display:none}
+#q-crochet-plushies-1:checked~main .add-crochet-plushies .a2{display:flex}
+#q-crochet-plushies-2:checked~main .add-crochet-plushies .a3{display:flex}
+#q-crochet-plushies-3:checked~main .add-crochet-plushies .a4{display:flex}
+#q-crochet-plushies-4:checked~main .add-crochet-plushies .a5{display:flex}
+#q-crochet-plushies-5:checked~main .add-crochet-plushies .amax{display:flex}
+#q-crochet-plushies-1:checked~main .row-crochet-plushies{display:grid;--q:"1";--sub:"\20b1 150";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-plushies-1:checked~.tally .t-crochet-plushies{counter-increment:bagitems 1 bagtotal 150}
+#q-crochet-plushies-2:checked~main .row-crochet-plushies{display:grid;--q:"2";--sub:"\20b1 300";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-plushies-2:checked~.tally .t-crochet-plushies{counter-increment:bagitems 2 bagtotal 300}
+#q-crochet-plushies-3:checked~main .row-crochet-plushies{display:grid;--q:"3";--sub:"\20b1 450";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-plushies-3:checked~.tally .t-crochet-plushies{counter-increment:bagitems 3 bagtotal 450}
+#q-crochet-plushies-4:checked~main .row-crochet-plushies{display:grid;--q:"4";--sub:"\20b1 600";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-plushies-4:checked~.tally .t-crochet-plushies{counter-increment:bagitems 4 bagtotal 600}
+#q-crochet-plushies-5:checked~main .row-crochet-plushies{display:grid;--q:"5";--sub:"\20b1 750";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-plushies-5:checked~.tally .t-crochet-plushies{counter-increment:bagitems 5 bagtotal 750}
+
+#q-crochet-mug-warmer-1:checked~main .add-crochet-mug-warmer .a1,#q-crochet-mug-warmer-2:checked~main .add-crochet-mug-warmer .a1,#q-crochet-mug-warmer-3:checked~main .add-crochet-mug-warmer .a1,#q-crochet-mug-warmer-4:checked~main .add-crochet-mug-warmer .a1,#q-crochet-mug-warmer-5:checked~main .add-crochet-mug-warmer .a1{display:none}
+#q-crochet-mug-warmer-1:checked~main .add-crochet-mug-warmer .a2{display:flex}
+#q-crochet-mug-warmer-2:checked~main .add-crochet-mug-warmer .a3{display:flex}
+#q-crochet-mug-warmer-3:checked~main .add-crochet-mug-warmer .a4{display:flex}
+#q-crochet-mug-warmer-4:checked~main .add-crochet-mug-warmer .a5{display:flex}
+#q-crochet-mug-warmer-5:checked~main .add-crochet-mug-warmer .amax{display:flex}
+#q-crochet-mug-warmer-1:checked~main .row-crochet-mug-warmer{display:grid;--q:"1";--sub:"\20b1 85";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-mug-warmer-1:checked~.tally .t-crochet-mug-warmer{counter-increment:bagitems 1 bagtotal 85}
+#q-crochet-mug-warmer-2:checked~main .row-crochet-mug-warmer{display:grid;--q:"2";--sub:"\20b1 170";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-mug-warmer-2:checked~.tally .t-crochet-mug-warmer{counter-increment:bagitems 2 bagtotal 170}
+#q-crochet-mug-warmer-3:checked~main .row-crochet-mug-warmer{display:grid;--q:"3";--sub:"\20b1 255";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-mug-warmer-3:checked~.tally .t-crochet-mug-warmer{counter-increment:bagitems 3 bagtotal 255}
+#q-crochet-mug-warmer-4:checked~main .row-crochet-mug-warmer{display:grid;--q:"4";--sub:"\20b1 340";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-mug-warmer-4:checked~.tally .t-crochet-mug-warmer{counter-increment:bagitems 4 bagtotal 340}
+#q-crochet-mug-warmer-5:checked~main .row-crochet-mug-warmer{display:grid;--q:"5";--sub:"\20b1 425";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-mug-warmer-5:checked~.tally .t-crochet-mug-warmer{counter-increment:bagitems 5 bagtotal 425}
+
+#q-crochet-clothes-250-1:checked~main .add-crochet-clothes-250 .a1,#q-crochet-clothes-250-2:checked~main .add-crochet-clothes-250 .a1,#q-crochet-clothes-250-3:checked~main .add-crochet-clothes-250 .a1,#q-crochet-clothes-250-4:checked~main .add-crochet-clothes-250 .a1,#q-crochet-clothes-250-5:checked~main .add-crochet-clothes-250 .a1{display:none}
+#q-crochet-clothes-250-1:checked~main .add-crochet-clothes-250 .a2{display:flex}
+#q-crochet-clothes-250-2:checked~main .add-crochet-clothes-250 .a3{display:flex}
+#q-crochet-clothes-250-3:checked~main .add-crochet-clothes-250 .a4{display:flex}
+#q-crochet-clothes-250-4:checked~main .add-crochet-clothes-250 .a5{display:flex}
+#q-crochet-clothes-250-5:checked~main .add-crochet-clothes-250 .amax{display:flex}
+#q-crochet-clothes-250-1:checked~main .row-crochet-clothes-250{display:grid;--q:"1";--sub:"\20b1 250";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-clothes-250-1:checked~.tally .t-crochet-clothes-250{counter-increment:bagitems 1 bagtotal 250}
+#q-crochet-clothes-250-2:checked~main .row-crochet-clothes-250{display:grid;--q:"2";--sub:"\20b1 500";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-clothes-250-2:checked~.tally .t-crochet-clothes-250{counter-increment:bagitems 2 bagtotal 500}
+#q-crochet-clothes-250-3:checked~main .row-crochet-clothes-250{display:grid;--q:"3";--sub:"\20b1 750";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-clothes-250-3:checked~.tally .t-crochet-clothes-250{counter-increment:bagitems 3 bagtotal 750}
+#q-crochet-clothes-250-4:checked~main .row-crochet-clothes-250{display:grid;--q:"4";--sub:"\20b1 1000";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-clothes-250-4:checked~.tally .t-crochet-clothes-250{counter-increment:bagitems 4 bagtotal 1000}
+#q-crochet-clothes-250-5:checked~main .row-crochet-clothes-250{display:grid;--q:"5";--sub:"\20b1 1250";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-clothes-250-5:checked~.tally .t-crochet-clothes-250{counter-increment:bagitems 5 bagtotal 1250}
+
+#q-crochet-clothes-300-1:checked~main .add-crochet-clothes-300 .a1,#q-crochet-clothes-300-2:checked~main .add-crochet-clothes-300 .a1,#q-crochet-clothes-300-3:checked~main .add-crochet-clothes-300 .a1,#q-crochet-clothes-300-4:checked~main .add-crochet-clothes-300 .a1,#q-crochet-clothes-300-5:checked~main .add-crochet-clothes-300 .a1{display:none}
+#q-crochet-clothes-300-1:checked~main .add-crochet-clothes-300 .a2{display:flex}
+#q-crochet-clothes-300-2:checked~main .add-crochet-clothes-300 .a3{display:flex}
+#q-crochet-clothes-300-3:checked~main .add-crochet-clothes-300 .a4{display:flex}
+#q-crochet-clothes-300-4:checked~main .add-crochet-clothes-300 .a5{display:flex}
+#q-crochet-clothes-300-5:checked~main .add-crochet-clothes-300 .amax{display:flex}
+#q-crochet-clothes-300-1:checked~main .row-crochet-clothes-300{display:grid;--q:"1";--sub:"\20b1 300";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-clothes-300-1:checked~.tally .t-crochet-clothes-300{counter-increment:bagitems 1 bagtotal 300}
+#q-crochet-clothes-300-2:checked~main .row-crochet-clothes-300{display:grid;--q:"2";--sub:"\20b1 600";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-clothes-300-2:checked~.tally .t-crochet-clothes-300{counter-increment:bagitems 2 bagtotal 600}
+#q-crochet-clothes-300-3:checked~main .row-crochet-clothes-300{display:grid;--q:"3";--sub:"\20b1 900";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-clothes-300-3:checked~.tally .t-crochet-clothes-300{counter-increment:bagitems 3 bagtotal 900}
+#q-crochet-clothes-300-4:checked~main .row-crochet-clothes-300{display:grid;--q:"4";--sub:"\20b1 1200";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-clothes-300-4:checked~.tally .t-crochet-clothes-300{counter-increment:bagitems 4 bagtotal 1200}
+#q-crochet-clothes-300-5:checked~main .row-crochet-clothes-300{display:grid;--q:"5";--sub:"\20b1 1500";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-clothes-300-5:checked~.tally .t-crochet-clothes-300{counter-increment:bagitems 5 bagtotal 1500}
+
+#q-crochet-clothes-350-1:checked~main .add-crochet-clothes-350 .a1,#q-crochet-clothes-350-2:checked~main .add-crochet-clothes-350 .a1,#q-crochet-clothes-350-3:checked~main .add-crochet-clothes-350 .a1,#q-crochet-clothes-350-4:checked~main .add-crochet-clothes-350 .a1,#q-crochet-clothes-350-5:checked~main .add-crochet-clothes-350 .a1{display:none}
+#q-crochet-clothes-350-1:checked~main .add-crochet-clothes-350 .a2{display:flex}
+#q-crochet-clothes-350-2:checked~main .add-crochet-clothes-350 .a3{display:flex}
+#q-crochet-clothes-350-3:checked~main .add-crochet-clothes-350 .a4{display:flex}
+#q-crochet-clothes-350-4:checked~main .add-crochet-clothes-350 .a5{display:flex}
+#q-crochet-clothes-350-5:checked~main .add-crochet-clothes-350 .amax{display:flex}
+#q-crochet-clothes-350-1:checked~main .row-crochet-clothes-350{display:grid;--q:"1";--sub:"\20b1 350";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-clothes-350-1:checked~.tally .t-crochet-clothes-350{counter-increment:bagitems 1 bagtotal 350}
+#q-crochet-clothes-350-2:checked~main .row-crochet-clothes-350{display:grid;--q:"2";--sub:"\20b1 700";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-clothes-350-2:checked~.tally .t-crochet-clothes-350{counter-increment:bagitems 2 bagtotal 700}
+#q-crochet-clothes-350-3:checked~main .row-crochet-clothes-350{display:grid;--q:"3";--sub:"\20b1 1050";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-clothes-350-3:checked~.tally .t-crochet-clothes-350{counter-increment:bagitems 3 bagtotal 1050}
+#q-crochet-clothes-350-4:checked~main .row-crochet-clothes-350{display:grid;--q:"4";--sub:"\20b1 1400";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-clothes-350-4:checked~.tally .t-crochet-clothes-350{counter-increment:bagitems 4 bagtotal 1400}
+#q-crochet-clothes-350-5:checked~main .row-crochet-clothes-350{display:grid;--q:"5";--sub:"\20b1 1750";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-clothes-350-5:checked~.tally .t-crochet-clothes-350{counter-increment:bagitems 5 bagtotal 1750}
+
+#q-crochet-hat-1:checked~main .add-crochet-hat .a1,#q-crochet-hat-2:checked~main .add-crochet-hat .a1,#q-crochet-hat-3:checked~main .add-crochet-hat .a1,#q-crochet-hat-4:checked~main .add-crochet-hat .a1,#q-crochet-hat-5:checked~main .add-crochet-hat .a1{display:none}
+#q-crochet-hat-1:checked~main .add-crochet-hat .a2{display:flex}
+#q-crochet-hat-2:checked~main .add-crochet-hat .a3{display:flex}
+#q-crochet-hat-3:checked~main .add-crochet-hat .a4{display:flex}
+#q-crochet-hat-4:checked~main .add-crochet-hat .a5{display:flex}
+#q-crochet-hat-5:checked~main .add-crochet-hat .amax{display:flex}
+#q-crochet-hat-1:checked~main .row-crochet-hat{display:grid;--q:"1";--sub:"\20b1 160";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-crochet-hat-1:checked~.tally .t-crochet-hat{counter-increment:bagitems 1 bagtotal 160}
+#q-crochet-hat-2:checked~main .row-crochet-hat{display:grid;--q:"2";--sub:"\20b1 320";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-crochet-hat-2:checked~.tally .t-crochet-hat{counter-increment:bagitems 2 bagtotal 320}
+#q-crochet-hat-3:checked~main .row-crochet-hat{display:grid;--q:"3";--sub:"\20b1 480";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-crochet-hat-3:checked~.tally .t-crochet-hat{counter-increment:bagitems 3 bagtotal 480}
+#q-crochet-hat-4:checked~main .row-crochet-hat{display:grid;--q:"4";--sub:"\20b1 640";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-crochet-hat-4:checked~.tally .t-crochet-hat{counter-increment:bagitems 4 bagtotal 640}
+#q-crochet-hat-5:checked~main .row-crochet-hat{display:grid;--q:"5";--sub:"\20b1 800";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-crochet-hat-5:checked~.tally .t-crochet-hat{counter-increment:bagitems 5 bagtotal 800}
+
+#q-wire-flower-bouquets-1:checked~main .add-wire-flower-bouquets .a1,#q-wire-flower-bouquets-2:checked~main .add-wire-flower-bouquets .a1,#q-wire-flower-bouquets-3:checked~main .add-wire-flower-bouquets .a1,#q-wire-flower-bouquets-4:checked~main .add-wire-flower-bouquets .a1,#q-wire-flower-bouquets-5:checked~main .add-wire-flower-bouquets .a1{display:none}
+#q-wire-flower-bouquets-1:checked~main .add-wire-flower-bouquets .a2{display:flex}
+#q-wire-flower-bouquets-2:checked~main .add-wire-flower-bouquets .a3{display:flex}
+#q-wire-flower-bouquets-3:checked~main .add-wire-flower-bouquets .a4{display:flex}
+#q-wire-flower-bouquets-4:checked~main .add-wire-flower-bouquets .a5{display:flex}
+#q-wire-flower-bouquets-5:checked~main .add-wire-flower-bouquets .amax{display:flex}
+#q-wire-flower-bouquets-1:checked~main .row-wire-flower-bouquets{display:grid;--q:"1";--sub:"\20b1 350";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-flower-bouquets-1:checked~.tally .t-wire-flower-bouquets{counter-increment:bagitems 1 bagtotal 350}
+#q-wire-flower-bouquets-2:checked~main .row-wire-flower-bouquets{display:grid;--q:"2";--sub:"\20b1 700";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-flower-bouquets-2:checked~.tally .t-wire-flower-bouquets{counter-increment:bagitems 2 bagtotal 700}
+#q-wire-flower-bouquets-3:checked~main .row-wire-flower-bouquets{display:grid;--q:"3";--sub:"\20b1 1050";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-flower-bouquets-3:checked~.tally .t-wire-flower-bouquets{counter-increment:bagitems 3 bagtotal 1050}
+#q-wire-flower-bouquets-4:checked~main .row-wire-flower-bouquets{display:grid;--q:"4";--sub:"\20b1 1400";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-flower-bouquets-4:checked~.tally .t-wire-flower-bouquets{counter-increment:bagitems 4 bagtotal 1400}
+#q-wire-flower-bouquets-5:checked~main .row-wire-flower-bouquets{display:grid;--q:"5";--sub:"\20b1 1750";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-flower-bouquets-5:checked~.tally .t-wire-flower-bouquets{counter-increment:bagitems 5 bagtotal 1750}
+
+#q-wire-keychains-1:checked~main .add-wire-keychains .a1,#q-wire-keychains-2:checked~main .add-wire-keychains .a1,#q-wire-keychains-3:checked~main .add-wire-keychains .a1,#q-wire-keychains-4:checked~main .add-wire-keychains .a1,#q-wire-keychains-5:checked~main .add-wire-keychains .a1{display:none}
+#q-wire-keychains-1:checked~main .add-wire-keychains .a2{display:flex}
+#q-wire-keychains-2:checked~main .add-wire-keychains .a3{display:flex}
+#q-wire-keychains-3:checked~main .add-wire-keychains .a4{display:flex}
+#q-wire-keychains-4:checked~main .add-wire-keychains .a5{display:flex}
+#q-wire-keychains-5:checked~main .add-wire-keychains .amax{display:flex}
+#q-wire-keychains-1:checked~main .row-wire-keychains{display:grid;--q:"1";--sub:"\20b1 45";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-keychains-1:checked~.tally .t-wire-keychains{counter-increment:bagitems 1 bagtotal 45}
+#q-wire-keychains-2:checked~main .row-wire-keychains{display:grid;--q:"2";--sub:"\20b1 90";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-keychains-2:checked~.tally .t-wire-keychains{counter-increment:bagitems 2 bagtotal 90}
+#q-wire-keychains-3:checked~main .row-wire-keychains{display:grid;--q:"3";--sub:"\20b1 135";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-keychains-3:checked~.tally .t-wire-keychains{counter-increment:bagitems 3 bagtotal 135}
+#q-wire-keychains-4:checked~main .row-wire-keychains{display:grid;--q:"4";--sub:"\20b1 180";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-keychains-4:checked~.tally .t-wire-keychains{counter-increment:bagitems 4 bagtotal 180}
+#q-wire-keychains-5:checked~main .row-wire-keychains{display:grid;--q:"5";--sub:"\20b1 225";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-keychains-5:checked~.tally .t-wire-keychains{counter-increment:bagitems 5 bagtotal 225}
+
+#q-wire-mirror-lace-1:checked~main .add-wire-mirror-lace .a1,#q-wire-mirror-lace-2:checked~main .add-wire-mirror-lace .a1,#q-wire-mirror-lace-3:checked~main .add-wire-mirror-lace .a1,#q-wire-mirror-lace-4:checked~main .add-wire-mirror-lace .a1,#q-wire-mirror-lace-5:checked~main .add-wire-mirror-lace .a1{display:none}
+#q-wire-mirror-lace-1:checked~main .add-wire-mirror-lace .a2{display:flex}
+#q-wire-mirror-lace-2:checked~main .add-wire-mirror-lace .a3{display:flex}
+#q-wire-mirror-lace-3:checked~main .add-wire-mirror-lace .a4{display:flex}
+#q-wire-mirror-lace-4:checked~main .add-wire-mirror-lace .a5{display:flex}
+#q-wire-mirror-lace-5:checked~main .add-wire-mirror-lace .amax{display:flex}
+#q-wire-mirror-lace-1:checked~main .row-wire-mirror-lace{display:grid;--q:"1";--sub:"\20b1 35";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-mirror-lace-1:checked~.tally .t-wire-mirror-lace{counter-increment:bagitems 1 bagtotal 35}
+#q-wire-mirror-lace-2:checked~main .row-wire-mirror-lace{display:grid;--q:"2";--sub:"\20b1 70";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-mirror-lace-2:checked~.tally .t-wire-mirror-lace{counter-increment:bagitems 2 bagtotal 70}
+#q-wire-mirror-lace-3:checked~main .row-wire-mirror-lace{display:grid;--q:"3";--sub:"\20b1 105";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-mirror-lace-3:checked~.tally .t-wire-mirror-lace{counter-increment:bagitems 3 bagtotal 105}
+#q-wire-mirror-lace-4:checked~main .row-wire-mirror-lace{display:grid;--q:"4";--sub:"\20b1 140";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-mirror-lace-4:checked~.tally .t-wire-mirror-lace{counter-increment:bagitems 4 bagtotal 140}
+#q-wire-mirror-lace-5:checked~main .row-wire-mirror-lace{display:grid;--q:"5";--sub:"\20b1 175";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-mirror-lace-5:checked~.tally .t-wire-mirror-lace{counter-increment:bagitems 5 bagtotal 175}
+
+#q-wire-headband-1:checked~main .add-wire-headband .a1,#q-wire-headband-2:checked~main .add-wire-headband .a1,#q-wire-headband-3:checked~main .add-wire-headband .a1,#q-wire-headband-4:checked~main .add-wire-headband .a1,#q-wire-headband-5:checked~main .add-wire-headband .a1{display:none}
+#q-wire-headband-1:checked~main .add-wire-headband .a2{display:flex}
+#q-wire-headband-2:checked~main .add-wire-headband .a3{display:flex}
+#q-wire-headband-3:checked~main .add-wire-headband .a4{display:flex}
+#q-wire-headband-4:checked~main .add-wire-headband .a5{display:flex}
+#q-wire-headband-5:checked~main .add-wire-headband .amax{display:flex}
+#q-wire-headband-1:checked~main .row-wire-headband{display:grid;--q:"1";--sub:"\20b1 80";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-headband-1:checked~.tally .t-wire-headband{counter-increment:bagitems 1 bagtotal 80}
+#q-wire-headband-2:checked~main .row-wire-headband{display:grid;--q:"2";--sub:"\20b1 160";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-headband-2:checked~.tally .t-wire-headband{counter-increment:bagitems 2 bagtotal 160}
+#q-wire-headband-3:checked~main .row-wire-headband{display:grid;--q:"3";--sub:"\20b1 240";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-headband-3:checked~.tally .t-wire-headband{counter-increment:bagitems 3 bagtotal 240}
+#q-wire-headband-4:checked~main .row-wire-headband{display:grid;--q:"4";--sub:"\20b1 320";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-headband-4:checked~.tally .t-wire-headband{counter-increment:bagitems 4 bagtotal 320}
+#q-wire-headband-5:checked~main .row-wire-headband{display:grid;--q:"5";--sub:"\20b1 400";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-headband-5:checked~.tally .t-wire-headband{counter-increment:bagitems 5 bagtotal 400}
+
+#q-wire-single-flower-1:checked~main .add-wire-single-flower .a1,#q-wire-single-flower-2:checked~main .add-wire-single-flower .a1,#q-wire-single-flower-3:checked~main .add-wire-single-flower .a1,#q-wire-single-flower-4:checked~main .add-wire-single-flower .a1,#q-wire-single-flower-5:checked~main .add-wire-single-flower .a1{display:none}
+#q-wire-single-flower-1:checked~main .add-wire-single-flower .a2{display:flex}
+#q-wire-single-flower-2:checked~main .add-wire-single-flower .a3{display:flex}
+#q-wire-single-flower-3:checked~main .add-wire-single-flower .a4{display:flex}
+#q-wire-single-flower-4:checked~main .add-wire-single-flower .a5{display:flex}
+#q-wire-single-flower-5:checked~main .add-wire-single-flower .amax{display:flex}
+#q-wire-single-flower-1:checked~main .row-wire-single-flower{display:grid;--q:"1";--sub:"\20b1 65";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-single-flower-1:checked~.tally .t-wire-single-flower{counter-increment:bagitems 1 bagtotal 65}
+#q-wire-single-flower-2:checked~main .row-wire-single-flower{display:grid;--q:"2";--sub:"\20b1 130";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-single-flower-2:checked~.tally .t-wire-single-flower{counter-increment:bagitems 2 bagtotal 130}
+#q-wire-single-flower-3:checked~main .row-wire-single-flower{display:grid;--q:"3";--sub:"\20b1 195";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-single-flower-3:checked~.tally .t-wire-single-flower{counter-increment:bagitems 3 bagtotal 195}
+#q-wire-single-flower-4:checked~main .row-wire-single-flower{display:grid;--q:"4";--sub:"\20b1 260";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-single-flower-4:checked~.tally .t-wire-single-flower{counter-increment:bagitems 4 bagtotal 260}
+#q-wire-single-flower-5:checked~main .row-wire-single-flower{display:grid;--q:"5";--sub:"\20b1 325";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-single-flower-5:checked~.tally .t-wire-single-flower{counter-increment:bagitems 5 bagtotal 325}
+
+#q-wire-table-lamp-1:checked~main .add-wire-table-lamp .a1,#q-wire-table-lamp-2:checked~main .add-wire-table-lamp .a1,#q-wire-table-lamp-3:checked~main .add-wire-table-lamp .a1,#q-wire-table-lamp-4:checked~main .add-wire-table-lamp .a1,#q-wire-table-lamp-5:checked~main .add-wire-table-lamp .a1{display:none}
+#q-wire-table-lamp-1:checked~main .add-wire-table-lamp .a2{display:flex}
+#q-wire-table-lamp-2:checked~main .add-wire-table-lamp .a3{display:flex}
+#q-wire-table-lamp-3:checked~main .add-wire-table-lamp .a4{display:flex}
+#q-wire-table-lamp-4:checked~main .add-wire-table-lamp .a5{display:flex}
+#q-wire-table-lamp-5:checked~main .add-wire-table-lamp .amax{display:flex}
+#q-wire-table-lamp-1:checked~main .row-wire-table-lamp{display:grid;--q:"1";--sub:"\20b1 85";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-table-lamp-1:checked~.tally .t-wire-table-lamp{counter-increment:bagitems 1 bagtotal 85}
+#q-wire-table-lamp-2:checked~main .row-wire-table-lamp{display:grid;--q:"2";--sub:"\20b1 170";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-table-lamp-2:checked~.tally .t-wire-table-lamp{counter-increment:bagitems 2 bagtotal 170}
+#q-wire-table-lamp-3:checked~main .row-wire-table-lamp{display:grid;--q:"3";--sub:"\20b1 255";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-table-lamp-3:checked~.tally .t-wire-table-lamp{counter-increment:bagitems 3 bagtotal 255}
+#q-wire-table-lamp-4:checked~main .row-wire-table-lamp{display:grid;--q:"4";--sub:"\20b1 340";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-table-lamp-4:checked~.tally .t-wire-table-lamp{counter-increment:bagitems 4 bagtotal 340}
+#q-wire-table-lamp-5:checked~main .row-wire-table-lamp{display:grid;--q:"5";--sub:"\20b1 425";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-table-lamp-5:checked~.tally .t-wire-table-lamp{counter-increment:bagitems 5 bagtotal 425}
+
+#q-wire-stuff-toys-1:checked~main .add-wire-stuff-toys .a1,#q-wire-stuff-toys-2:checked~main .add-wire-stuff-toys .a1,#q-wire-stuff-toys-3:checked~main .add-wire-stuff-toys .a1,#q-wire-stuff-toys-4:checked~main .add-wire-stuff-toys .a1,#q-wire-stuff-toys-5:checked~main .add-wire-stuff-toys .a1{display:none}
+#q-wire-stuff-toys-1:checked~main .add-wire-stuff-toys .a2{display:flex}
+#q-wire-stuff-toys-2:checked~main .add-wire-stuff-toys .a3{display:flex}
+#q-wire-stuff-toys-3:checked~main .add-wire-stuff-toys .a4{display:flex}
+#q-wire-stuff-toys-4:checked~main .add-wire-stuff-toys .a5{display:flex}
+#q-wire-stuff-toys-5:checked~main .add-wire-stuff-toys .amax{display:flex}
+#q-wire-stuff-toys-1:checked~main .row-wire-stuff-toys{display:grid;--q:"1";--sub:"\20b1 120";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-stuff-toys-1:checked~.tally .t-wire-stuff-toys{counter-increment:bagitems 1 bagtotal 120}
+#q-wire-stuff-toys-2:checked~main .row-wire-stuff-toys{display:grid;--q:"2";--sub:"\20b1 240";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-stuff-toys-2:checked~.tally .t-wire-stuff-toys{counter-increment:bagitems 2 bagtotal 240}
+#q-wire-stuff-toys-3:checked~main .row-wire-stuff-toys{display:grid;--q:"3";--sub:"\20b1 360";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-stuff-toys-3:checked~.tally .t-wire-stuff-toys{counter-increment:bagitems 3 bagtotal 360}
+#q-wire-stuff-toys-4:checked~main .row-wire-stuff-toys{display:grid;--q:"4";--sub:"\20b1 480";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-stuff-toys-4:checked~.tally .t-wire-stuff-toys{counter-increment:bagitems 4 bagtotal 480}
+#q-wire-stuff-toys-5:checked~main .row-wire-stuff-toys{display:grid;--q:"5";--sub:"\20b1 600";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-stuff-toys-5:checked~.tally .t-wire-stuff-toys{counter-increment:bagitems 5 bagtotal 600}
+
+#q-wire-bracelets-1:checked~main .add-wire-bracelets .a1,#q-wire-bracelets-2:checked~main .add-wire-bracelets .a1,#q-wire-bracelets-3:checked~main .add-wire-bracelets .a1,#q-wire-bracelets-4:checked~main .add-wire-bracelets .a1,#q-wire-bracelets-5:checked~main .add-wire-bracelets .a1{display:none}
+#q-wire-bracelets-1:checked~main .add-wire-bracelets .a2{display:flex}
+#q-wire-bracelets-2:checked~main .add-wire-bracelets .a3{display:flex}
+#q-wire-bracelets-3:checked~main .add-wire-bracelets .a4{display:flex}
+#q-wire-bracelets-4:checked~main .add-wire-bracelets .a5{display:flex}
+#q-wire-bracelets-5:checked~main .add-wire-bracelets .amax{display:flex}
+#q-wire-bracelets-1:checked~main .row-wire-bracelets{display:grid;--q:"1";--sub:"\20b1 55";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-bracelets-1:checked~.tally .t-wire-bracelets{counter-increment:bagitems 1 bagtotal 55}
+#q-wire-bracelets-2:checked~main .row-wire-bracelets{display:grid;--q:"2";--sub:"\20b1 110";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-bracelets-2:checked~.tally .t-wire-bracelets{counter-increment:bagitems 2 bagtotal 110}
+#q-wire-bracelets-3:checked~main .row-wire-bracelets{display:grid;--q:"3";--sub:"\20b1 165";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-bracelets-3:checked~.tally .t-wire-bracelets{counter-increment:bagitems 3 bagtotal 165}
+#q-wire-bracelets-4:checked~main .row-wire-bracelets{display:grid;--q:"4";--sub:"\20b1 220";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-bracelets-4:checked~.tally .t-wire-bracelets{counter-increment:bagitems 4 bagtotal 220}
+#q-wire-bracelets-5:checked~main .row-wire-bracelets{display:grid;--q:"5";--sub:"\20b1 275";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-bracelets-5:checked~.tally .t-wire-bracelets{counter-increment:bagitems 5 bagtotal 275}
+
+#q-wire-mini-xmas-tree-1:checked~main .add-wire-mini-xmas-tree .a1,#q-wire-mini-xmas-tree-2:checked~main .add-wire-mini-xmas-tree .a1,#q-wire-mini-xmas-tree-3:checked~main .add-wire-mini-xmas-tree .a1,#q-wire-mini-xmas-tree-4:checked~main .add-wire-mini-xmas-tree .a1,#q-wire-mini-xmas-tree-5:checked~main .add-wire-mini-xmas-tree .a1{display:none}
+#q-wire-mini-xmas-tree-1:checked~main .add-wire-mini-xmas-tree .a2{display:flex}
+#q-wire-mini-xmas-tree-2:checked~main .add-wire-mini-xmas-tree .a3{display:flex}
+#q-wire-mini-xmas-tree-3:checked~main .add-wire-mini-xmas-tree .a4{display:flex}
+#q-wire-mini-xmas-tree-4:checked~main .add-wire-mini-xmas-tree .a5{display:flex}
+#q-wire-mini-xmas-tree-5:checked~main .add-wire-mini-xmas-tree .amax{display:flex}
+#q-wire-mini-xmas-tree-1:checked~main .row-wire-mini-xmas-tree{display:grid;--q:"1";--sub:"\20b1 120";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-mini-xmas-tree-1:checked~.tally .t-wire-mini-xmas-tree{counter-increment:bagitems 1 bagtotal 120}
+#q-wire-mini-xmas-tree-2:checked~main .row-wire-mini-xmas-tree{display:grid;--q:"2";--sub:"\20b1 240";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-mini-xmas-tree-2:checked~.tally .t-wire-mini-xmas-tree{counter-increment:bagitems 2 bagtotal 240}
+#q-wire-mini-xmas-tree-3:checked~main .row-wire-mini-xmas-tree{display:grid;--q:"3";--sub:"\20b1 360";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-mini-xmas-tree-3:checked~.tally .t-wire-mini-xmas-tree{counter-increment:bagitems 3 bagtotal 360}
+#q-wire-mini-xmas-tree-4:checked~main .row-wire-mini-xmas-tree{display:grid;--q:"4";--sub:"\20b1 480";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-mini-xmas-tree-4:checked~.tally .t-wire-mini-xmas-tree{counter-increment:bagitems 4 bagtotal 480}
+#q-wire-mini-xmas-tree-5:checked~main .row-wire-mini-xmas-tree{display:grid;--q:"5";--sub:"\20b1 600";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-mini-xmas-tree-5:checked~.tally .t-wire-mini-xmas-tree{counter-increment:bagitems 5 bagtotal 600}
+
+#q-wire-cable-wraps-1:checked~main .add-wire-cable-wraps .a1,#q-wire-cable-wraps-2:checked~main .add-wire-cable-wraps .a1,#q-wire-cable-wraps-3:checked~main .add-wire-cable-wraps .a1,#q-wire-cable-wraps-4:checked~main .add-wire-cable-wraps .a1,#q-wire-cable-wraps-5:checked~main .add-wire-cable-wraps .a1{display:none}
+#q-wire-cable-wraps-1:checked~main .add-wire-cable-wraps .a2{display:flex}
+#q-wire-cable-wraps-2:checked~main .add-wire-cable-wraps .a3{display:flex}
+#q-wire-cable-wraps-3:checked~main .add-wire-cable-wraps .a4{display:flex}
+#q-wire-cable-wraps-4:checked~main .add-wire-cable-wraps .a5{display:flex}
+#q-wire-cable-wraps-5:checked~main .add-wire-cable-wraps .amax{display:flex}
+#q-wire-cable-wraps-1:checked~main .row-wire-cable-wraps{display:grid;--q:"1";--sub:"\20b1 75";--on1:var(--rose-dark);--tx1:var(--white)}
+#q-wire-cable-wraps-1:checked~.tally .t-wire-cable-wraps{counter-increment:bagitems 1 bagtotal 75}
+#q-wire-cable-wraps-2:checked~main .row-wire-cable-wraps{display:grid;--q:"2";--sub:"\20b1 150";--on2:var(--rose-dark);--tx2:var(--white)}
+#q-wire-cable-wraps-2:checked~.tally .t-wire-cable-wraps{counter-increment:bagitems 2 bagtotal 150}
+#q-wire-cable-wraps-3:checked~main .row-wire-cable-wraps{display:grid;--q:"3";--sub:"\20b1 225";--on3:var(--rose-dark);--tx3:var(--white)}
+#q-wire-cable-wraps-3:checked~.tally .t-wire-cable-wraps{counter-increment:bagitems 3 bagtotal 225}
+#q-wire-cable-wraps-4:checked~main .row-wire-cable-wraps{display:grid;--q:"4";--sub:"\20b1 300";--on4:var(--rose-dark);--tx4:var(--white)}
+#q-wire-cable-wraps-4:checked~.tally .t-wire-cable-wraps{counter-increment:bagitems 4 bagtotal 300}
+#q-wire-cable-wraps-5:checked~main .row-wire-cable-wraps{display:grid;--q:"5";--sub:"\20b1 375";--on5:var(--rose-dark);--tx5:var(--white)}
+#q-wire-cable-wraps-5:checked~.tally .t-wire-cable-wraps{counter-increment:bagitems 5 bagtotal 375}
+
+#g-sweetheart:checked~main .gift-sweetheart .gl-off{display:none}
+#g-sweetheart:checked~main .gift-sweetheart .gl-on{display:inline}
+#g-sweetheart:checked~main .gp-sweetheart{display:block}
+
+#g-bunny-garden:checked~main .gift-bunny-garden .gl-off{display:none}
+#g-bunny-garden:checked~main .gift-bunny-garden .gl-on{display:inline}
+#g-bunny-garden:checked~main .gp-bunny-garden{display:block}
+
+#g-pastel-bloom:checked~main .gift-pastel-bloom .gl-off{display:none}
+#g-pastel-bloom:checked~main .gift-pastel-bloom .gl-on{display:inline}
+#g-pastel-bloom:checked~main .gp-pastel-bloom{display:block}
+
+#g-desk-buddy:checked~main .gift-desk-buddy .gl-off{display:none}
+#g-desk-buddy:checked~main .gift-desk-buddy .gl-on{display:inline}
+#g-desk-buddy:checked~main .gp-desk-buddy{display:block}
+
+#g-bestie-box:checked~main .gift-bestie-box .gl-off{display:none}
+#g-bestie-box:checked~main .gift-bestie-box .gl-on{display:inline}
+#g-bestie-box:checked~main .gp-bestie-box{display:block}

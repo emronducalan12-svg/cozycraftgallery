@@ -1,0 +1,176 @@
+.login-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+    background: radial-gradient(rgba(255, 255, 255, .6) 2px, transparent 2px) 0 0 / 28px 28px, linear-gradient(135deg, var(--pink), var(--lavender) 55%, var(--peach));
+}
+
+body:has(:target) .login-screen {
+    display: none;
+}
+
+body:has(#login:target) .login-screen {
+    display: flex;
+}
+
+body:has(#signup:target) .login-screen {
+    display: flex;
+}
+
+body:not(:has(:target)) .site-header,
+body:not(:has(:target)) main,
+body:not(:has(:target)) .site-footer,
+body:not(:has(:target)) .cart-fab,
+body:has(#login:target) .site-header,
+body:has(#login:target) main,
+body:has(#login:target) .site-footer,
+body:has(#login:target) .cart-fab,
+body:has(#signup:target) .site-header,
+body:has(#signup:target) main,
+body:has(#signup:target) .site-footer,
+body:has(#signup:target) .cart-fab {
+    display: none;
+}
+
+.signup-card {
+    display: none;
+}
+
+body:has(#signup:target) .login-card:not(.signup-card) {
+    display: none;
+}
+
+body:has(#signup:target) .signup-card {
+    display: block;
+}
+
+.login-card {
+    position: relative;
+    width: 100%;
+    max-width: 410px;
+    margin-top: 50px;
+    padding: 40px 30px 26px;
+    text-align: center;
+    background: var(--cream);
+    box-shadow: 0 -3px 0 0 var(--ink), 0 3px 0 0 var(--ink), -3px 0 0 0 var(--ink), 3px 0 0 0 var(--ink), 10px 10px 0 0 var(--hard);
+}
+
+.login-badge {
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 90px;
+    margin: -82px auto 12px;
+    background: var(--pink);
+    box-shadow: 0 -3px 0 0 var(--ink), 0 3px 0 0 var(--ink), -3px 0 0 0 var(--ink), 3px 0 0 0 var(--ink), 5px 5px 0 0 var(--hard);
+}
+
+.login-badge img {
+    width: 74px;
+    height: auto;
+}
+
+.login-title {
+    margin-bottom: 6px;
+    font-size: 1.9rem;
+}
+
+.login-welcome {
+    margin-bottom: 24px;
+    opacity: .88;
+}
+
+.login-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    margin: 0;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.field input {
+    width: 100%;
+    padding: 22px 16px 8px;
+    font: 500 1rem var(--font-body);
+    color: var(--text);
+    background: var(--white);
+    border: 3px solid var(--ink);
+    border-radius: 0;
+    outline: none;
+}
+
+.field input:focus {
+    box-shadow: 5px 5px 0 0 var(--rose);
+}
+
+.field label {
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    color: var(--ink);
+    opacity: .8;
+    pointer-events: none;
+    transform-origin: left top;
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+    transform: translateY(-9px) scale(.78);
+    color: var(--rose-dark);
+    opacity: 1;
+    font-weight: 600;
+}
+
+.field-line {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 6px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--rose), var(--peach), var(--lavender));
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.field input:focus ~ .field-line {
+    transform: scaleX(1);
+}
+
+.login-form:has(:invalid) .enter-link {
+    display: none;
+}
+
+.login-form:not(:has(:invalid)) .enter-disabled {
+    display: none;
+}
+
+.enter-disabled:disabled {
+    cursor: not-allowed;
+    opacity: .55;
+}
+
+.login-guest {
+    display: inline-block;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.login-switch {
+    margin: 12px 0 0;
+}
+
+.login-note {
+    margin: 12px 0 0;
+    font-size: .78rem;
+    opacity: .75;
+}

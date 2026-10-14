@@ -1,0 +1,157 @@
+:root {
+    --pink: #F8D7DF;
+    --peach: #FFE1D2;
+    --cream: #FFF8F0;
+    --rose: #D58A9A;
+    --rose-dark: #A0566B;
+    --lavender: #E9E0F5;
+    --mint: #E1F1E8;
+    --babyblue: #DDEBFA;
+    --ink: #64475B;
+    --text: #4A3F55;
+    --white: #FFFFFF;
+    --btn-bg: var(--rose-dark);
+    --accent: var(--rose-dark);
+    --font-body: 'Outfit', 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    --font-head: 'Fredoka', 'Outfit', 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    --font-pixel: 'Silkscreen', 'Courier New', monospace;
+    --radius: 16px;
+    --radius-lg: 24px;
+    --shadow-sm: 0 3px 8px rgba(100, 71, 91, .14);
+    --border: 1.5px solid rgba(100, 71, 91, .2);
+    --hard: rgba(100, 71, 91, .35);
+    --header-h: 76px;
+    --bg-hearts: radial-gradient(rgba(213, 138, 154, .45) 2.5px, transparent 3px) 0 0 / 16px 16px;
+    --bg-floral: radial-gradient(circle at 12% 88%, rgba(169, 199, 160, .6) 0 24px, transparent 25px), radial-gradient(circle at 90% 10%, rgba(169, 199, 160, .6) 0 24px, transparent 25px);
+    --bg-chibi: radial-gradient(circle at 82% 86%, rgba(255, 255, 255, .8) 0 22px, transparent 23px);
+    --bg-confetti: radial-gradient(circle at 20% 25%, #F4A6B5 0 4px, transparent 5px), radial-gradient(circle at 76% 20%, #9FC5E8 0 4px, transparent 5px), radial-gradient(circle at 58% 76%, #FFE08A 0 5px, transparent 6px), radial-gradient(circle at 24% 80%, #A9D1B3 0 4px, transparent 5px);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: calc(var(--header-h) + 10px);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--cream);
+    background-image:
+        radial-gradient(rgba(213, 138, 154, .14) 1.2px, transparent 1.2px),
+        linear-gradient(165deg, #FFF8F0 0%, #FDEBEE 28%, #FFE9DC 52%, #F1EAF8 78%, #E6F3EB 100%);
+    background-size: 26px 26px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    counter-reset: bagitems 0 bagtotal 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--rose-dark);
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-head);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 .45em;
+    color: var(--ink);
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+:focus-visible {
+    outline: 3px solid var(--rose);
+    outline-offset: 3px;
+}
+
+.state-input {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: -70px;
+    z-index: 300;
+    padding: 10px 16px;
+    color: var(--white);
+    background: var(--ink);
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+.eyebrow {
+    margin-bottom: .4em;
+    font-family: var(--font-pixel);
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--rose-dark);
+}
+
+.section-title {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.section-intro {
+    max-width: 620px;
+    margin: 0 auto 1.6em;
+}
+
+.hint,
+.optional {
+    font-size: .85rem;
+    font-weight: 400;
+    opacity: .9;
+}
+
+/* Small stitched divider under centered section titles */
+.categories .section-title::after,
+.best .section-title::after,
+.gifts .section-title::after,
+.social .section-title::after,
+.contact .section-title::after,
+.about-text .section-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    margin: 8px auto 0;
+    border-top: 3px dashed var(--rose);
+}
+
+.about-text .section-title::after {
+    margin-left: 0;
+}

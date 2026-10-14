@@ -1,0 +1,523 @@
+.card-intro {
+    margin: 6px 0 12px;
+    font-size: .92rem;
+}
+
+.cb-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.card-builder {
+    position: relative;
+}
+
+.cb-group {
+    margin-bottom: 16px;
+}
+
+.cb-title {
+    display: block;
+    margin: 0 0 8px;
+    font-size: .92rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+    gap: 6px;
+}
+
+.design-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 4px 7px 7px 4px;
+    overflow: hidden;
+    background: var(--cream);
+    cursor: pointer;
+    box-shadow: 0 -3px 0 0 var(--ink), 0 3px 0 0 var(--ink), -3px 0 0 0 var(--ink), 3px 0 0 0 var(--ink), 4px 4px 0 0 var(--hard);
+}
+
+.design-art {
+    display: grid;
+    place-items: center;
+    height: 62px;
+    font: 600 1rem var(--font-head);
+    letter-spacing: .08em;
+    color: var(--rose-dark);
+    background-color: var(--pink);
+}
+
+.design-name {
+    padding: 6px 4px;
+    font-family: var(--font-pixel);
+    font-size: .64rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--ink);
+}
+
+.design-card::after {
+    content: "\2713";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--rose-dark);
+    transform: scale(0);
+}
+
+.design-card:has(.cb-radio:checked) {
+    --ink: var(--rose-dark);
+    background: var(--white);
+    transform: translate(-2px, -2px);
+}
+
+.design-card:has(.cb-radio:checked)::after {
+    transform: scale(1);
+}
+
+.design-card--none .design-art {
+    color: var(--ink);
+    background: var(--cream);
+}
+
+.design-card--hearts .design-art {
+    background: var(--pink) var(--bg-hearts);
+}
+
+.design-card--floral .design-art {
+    color: #8FB28A;
+    background: #FDF3F5 var(--bg-floral);
+}
+
+.design-card--chibi .design-art {
+    color: var(--ink);
+    background: var(--babyblue) var(--bg-chibi);
+}
+
+.design-card--cream .design-art {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--ink);
+    background: var(--cream);
+}
+
+.design-card--confetti .design-art {
+    color: #C9708A;
+    background: var(--lavender) var(--bg-confetti);
+}
+
+.swatch-row,
+.chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.swatch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 3px 6px 6px 3px;
+    padding: 5px 10px 5px 5px;
+    font-family: var(--font-pixel);
+    font-size: .66rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--cream);
+    cursor: pointer;
+    box-shadow: 0 -3px 0 0 var(--ink), 0 3px 0 0 var(--ink), -3px 0 0 0 var(--ink), 3px 0 0 0 var(--ink), 4px 4px 0 0 var(--hard);
+}
+
+.swatch:has(.cb-radio:checked) {
+    --ink: var(--rose-dark);
+    background: var(--white);
+    transform: translate(-2px, -2px);
+}
+
+.swatch:has(.cb-radio:checked) .swatch-dot::after {
+    content: "\2713";
+}
+
+.swatch-dot {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--ink);
+    border: 2px solid var(--ink);
+}
+
+.swatch-dot--blush {
+    background: #F8D7DF;
+}
+
+.swatch-dot--peach {
+    background: #FFE0CC;
+}
+
+.swatch-dot--lavender {
+    background: #E8DFF5;
+}
+
+.swatch-dot--babyblue {
+    background: #DDEBFA;
+}
+
+.swatch-dot--mint {
+    background: #D9EBDD;
+}
+
+.swatch-dot--cream {
+    background: #FFF8F2;
+}
+
+.chip {
+    margin: 3px 6px 6px 3px;
+    padding: 8px 12px;
+    font-family: var(--font-pixel);
+    font-size: .68rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--cream);
+    cursor: pointer;
+    box-shadow: 0 -3px 0 0 var(--ink), 0 3px 0 0 var(--ink), -3px 0 0 0 var(--ink), 3px 0 0 0 var(--ink), 4px 4px 0 0 var(--hard);
+}
+
+.chip:has(.cb-radio:checked) {
+    background: var(--rose-dark);
+    color: var(--white);
+    transform: translate(-2px, -2px);
+}
+
+.message-choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.photo-choice {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 7px;
+    font-size: .78rem;
+    text-align: center;
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0 -2px 0 0 var(--ink), 0 2px 0 0 var(--ink), -2px 0 0 0 var(--ink), 2px 0 0 0 var(--ink), 3px 3px 0 0 var(--hard);
+}
+
+.photo-choice img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.photo-choice:has(.cb-radio:checked) {
+    --ink: var(--rose-dark);
+    background: var(--pink);
+    transform: translate(-2px, -2px);
+}
+
+.card-builder:has(.cb-radio:focus-visible) .design-card:has(.cb-radio:focus-visible),
+.card-builder .swatch:has(.cb-radio:focus-visible),
+.card-builder .chip:has(.cb-radio:focus-visible),
+.card-builder .photo-choice:has(.cb-radio:focus-visible) {
+    outline: 3px solid var(--text);
+    outline-offset: 5px;
+}
+
+/* ---------- Greeting card preview ---------- */
+.card-stage {
+    display: grid;
+    justify-items: center;
+    margin: 0 0 12px;
+    padding: 22px 14px 18px;
+    background: linear-gradient(135deg, var(--cream), var(--lavender));
+    border: 3px dashed var(--rose);
+}
+
+.card-builder:has(#d-none:checked) .card-stage::before {
+    content: "Pick a design above to start your card";
+    margin-bottom: 14px;
+    font: 700 .7rem/1.4 var(--font-pixel);
+    text-align: center;
+    color: var(--ink);
+}
+
+.card-preview {
+    --paper: #F8D7DF;
+    --pv-bg: none;
+    --pv-scale: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: calc(250px * var(--pv-scale));
+    max-width: 100%;
+    aspect-ratio: 3 / 4;
+    padding: 20px 18px 18px;
+    text-align: center;
+    background: var(--pv-bg), var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 6px;
+    box-shadow: 6px 6px 0 0 var(--hard);
+}
+
+/* stitched inner border */
+.card-preview::after {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 2px dashed rgba(100, 71, 91, .45);
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.pv-art {
+    position: relative;
+    z-index: 1;
+    min-height: 1.4em;
+    font: 600 1.3rem/1.2 var(--font-head);
+    color: var(--ink);
+}
+
+/* photo placeholder: shown only for "Custom design"; a chosen photo cannot be previewed without JavaScript */
+.pv-photo {
+    position: relative;
+    z-index: 1;
+    display: none;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    height: calc(104px * var(--pv-scale));
+    padding: 6px;
+    font: 600 .85rem/1.2 var(--font-head);
+    color: var(--ink);
+    background: linear-gradient(135deg, rgba(255, 255, 255, .85), rgba(255, 225, 210, .85));
+    border: 3px solid var(--white);
+    border-radius: 12px;
+    outline: 2px dashed rgba(100, 71, 91, .5);
+    outline-offset: 2px;
+}
+
+.pv-photo::before {
+    content: "\2665";
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--rose);
+}
+
+.card-builder:has(#ty-custom:checked) .pv-photo {
+    display: flex;
+}
+
+.pv-message-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.card-preview .pv-message {
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 6.5em;
+    max-height: 14em;
+    margin: 0;
+    padding: 10px 12px;
+    font: 500 1rem/1.5 var(--font-body);
+    text-align: center;
+    color: var(--text);
+    background: rgba(255, 255, 255, .88);
+    border: 2px dashed rgba(160, 86, 107, .75);
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+}
+
+.card-preview .pv-message::placeholder {
+    color: #6F5F7A;
+    opacity: 1;
+}
+
+.card-preview .pv-message:focus {
+    background: var(--white);
+    border-style: solid;
+    border-color: var(--rose-dark);
+    box-shadow: 0 0 0 3px rgba(160, 86, 107, .3);
+}
+
+/* small "type here" tag, hidden as soon as something is typed */
+.pv-pen {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: none;
+    padding: 3px 7px;
+    font: 700 .62rem/1.3 var(--font-pixel);
+    color: var(--white);
+    background: var(--rose-dark);
+    pointer-events: none;
+}
+
+.pv-message:placeholder-shown ~ .pv-pen {
+    display: block;
+}
+
+@supports (field-sizing: content) {
+    .card-preview .pv-message {
+        field-sizing: content;
+    }
+}
+
+.preview-note {
+    margin-bottom: 14px;
+}
+
+.cb-custom input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 8px 12px;
+    font: 700 .7rem var(--font-pixel);
+    color: var(--white);
+    background: var(--rose-dark);
+    border: 0;
+    cursor: pointer;
+}
+
+.cb-custom {
+    display: none;
+    margin-bottom: 14px;
+    padding: 12px 14px 2px;
+    background: var(--cream);
+    border: 3px dashed var(--rose);
+}
+
+.card-builder:has(#ty-custom:checked) .cb-custom {
+    display: block;
+}
+
+.card-builder:has(#d-hearts:checked) .card-preview {
+    --pv-bg: var(--bg-hearts);
+}
+
+.card-builder:has(#d-hearts:checked) .pv-art::before {
+    content: "\2665 \2665 \2665";
+}
+
+.card-builder:has(#d-floral:checked) .card-preview {
+    --pv-bg: var(--bg-floral);
+}
+
+.card-builder:has(#d-floral:checked) .pv-art::before {
+    content: "\273f \2740 \273f";
+}
+
+.card-builder:has(#d-chibi:checked) .card-preview {
+    --pv-bg: var(--bg-chibi);
+}
+
+.card-builder:has(#d-chibi:checked) .pv-art::before {
+    content: "(\25d5\203f\25d5)";
+}
+
+.card-builder:has(#d-cream:checked) .pv-art::before {
+    content: "Hello";
+}
+
+.card-builder:has(#d-confetti:checked) .card-preview {
+    --pv-bg: var(--bg-confetti);
+}
+
+.card-builder:has(#d-confetti:checked) .pv-art::before {
+    content: "\2605 \25cf \25b2";
+}
+
+.card-builder:has(#photo-boquette:checked) .card-preview,
+.card-builder:has(#photo-table-cloth:checked) .card-preview,
+.card-builder:has(#photo-mini-animals:checked) .card-preview,
+.card-builder:has(#photo-bookmark:checked) .card-preview,
+.card-builder:has(#photo-emotional-support:checked) .card-preview {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-builder:has(#photo-boquette:checked) .card-preview {
+    --pv-bg: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url("../assets/products/custom/boquette.jpg");
+}
+
+.card-builder:has(#photo-table-cloth:checked) .card-preview {
+    --pv-bg: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url("../assets/products/custom/table%20cloth.jpg");
+}
+
+.card-builder:has(#photo-mini-animals:checked) .card-preview {
+    --pv-bg: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url("../assets/products/custom/mini%20animals.jpg");
+}
+
+.card-builder:has(#photo-bookmark:checked) .card-preview {
+    --pv-bg: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url("../assets/products/custom/bookmark.jpg");
+}
+
+.card-builder:has(#photo-emotional-support:checked) .card-preview {
+    --pv-bg: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url("../assets/products/custom/emotional%20support.jpg");
+}
+
+.card-builder:has(#col-blush:checked) .card-preview {
+    --paper: #F8D7DF;
+}
+
+.card-builder:has(#col-peach:checked) .card-preview {
+    --paper: #FFE0CC;
+}
+
+.card-builder:has(#col-lavender:checked) .card-preview {
+    --paper: #E8DFF5;
+}
+
+.card-builder:has(#col-babyblue:checked) .card-preview {
+    --paper: #DDEBFA;
+}
+
+.card-builder:has(#col-mint:checked) .card-preview {
+    --paper: #D9EBDD;
+}
+
+.card-builder:has(#col-cream:checked) .card-preview {
+    --paper: #FFF8F2;
+}
+
+.card-builder:has(#sz-small:checked) .card-preview {
+    --pv-scale: .82;
+}
+
+.card-builder:has(#sz-large:checked) .card-preview {
+    --pv-scale: 1.18;
+}

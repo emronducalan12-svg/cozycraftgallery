@@ -1,0 +1,244 @@
+.order-form {
+    display: grid;
+    gap: 22px;
+}
+
+.pick-default {
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    background: var(--white);
+    border: 3px dashed var(--rose);
+}
+
+.pick-default p:last-child {
+    margin: 0;
+}
+
+.selected-item {
+    display: none;
+}
+
+.selected-item:target {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: start;
+    gap: 18px;
+    margin-bottom: 18px;
+    padding: 16px;
+    background: var(--white);
+    border: 3px solid var(--rose);
+    box-shadow: 6px 6px 0 0 var(--hard);
+}
+
+.view--order:has(.selected-item:target) .pick-default {
+    display: none;
+}
+
+.selected-item img {
+    width: 130px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: var(--pink);
+}
+
+.selected-item h3 {
+    margin-bottom: .1em;
+}
+
+.selected-price {
+    margin: 0 0 .4em;
+    font: 700 1.3rem var(--font-body);
+    color: var(--rose-dark);
+}
+
+.selected-note {
+    margin-bottom: .4em;
+    font-size: .85rem;
+}
+
+.of-block {
+    min-width: 0;
+    margin: 0;
+    padding: 20px clamp(14px, 3vw, 24px) 8px;
+    background: var(--white);
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.of-block legend {
+    margin: 0 3px;
+    padding: 6px 14px;
+    font: 700 .7rem var(--font-pixel);
+    color: var(--white);
+    background: var(--rose-dark);
+    box-shadow: 0 -3px 0 0 var(--ink), 0 3px 0 0 var(--ink), -3px 0 0 0 var(--ink), 3px 0 0 0 var(--ink);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.form-field {
+    flex: 1 1 200px;
+    min-width: 0;
+    margin-bottom: 14px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form input[type="email"],
+.order-form input[type="number"],
+.order-form input[type="file"],
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 11px 13px;
+    font: 400 1rem var(--font-body);
+    color: var(--text);
+    background: var(--cream);
+    border: 2px solid rgba(138, 90, 122, .4);
+    border-radius: 0;
+    outline: none;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    background: var(--white);
+    border-color: var(--rose-dark);
+    box-shadow: 4px 4px 0 0 var(--pink);
+}
+
+.order-form input:user-invalid,
+.order-form select:user-invalid {
+    border-color: #C0505F;
+}
+
+.order-form textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: .92rem;
+}
+
+.form-check input {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    accent-color: var(--rose-dark);
+}
+
+.form-note,
+.limit-note,
+.preview-note {
+    font-size: .85rem;
+}
+
+.form-note {
+    margin: 0;
+    text-align: center;
+}
+
+.limit-note {
+    padding: 10px 12px;
+    background: var(--lavender);
+}
+
+.order-items {
+    margin-bottom: 14px;
+}
+
+.order-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+
+.order-total-row {
+    display: none;
+    margin: 10px 0 0;
+    font-weight: 600;
+}
+
+.summary {
+    padding: 18px 22px;
+    background: linear-gradient(135deg, var(--cream), var(--lavender));
+    border: 3px dashed var(--rose);
+}
+
+.summary h3 {
+    font-size: 1.05rem;
+}
+
+.summary dl {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+}
+
+.summary dl > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed rgba(138, 90, 122, .3);
+}
+
+.summary dt {
+    flex: 0 0 240px;
+    font-weight: 600;
+}
+
+.summary dd {
+    flex: 1 1 240px;
+    margin: 0;
+}
+
+.summary dd input {
+    max-width: 160px;
+    margin-bottom: 4px;
+}
+
+.summary .summary-total {
+    border-bottom: 0;
+    font-weight: 600;
+}
+
+.order-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gift-panel {
+    display: none;
+    margin-bottom: 14px;
+    padding: 10px 14px 2px;
+    background: var(--mint);
+    border: 3px dashed var(--rose);
+}
+
+.selected-item .add-set,
+.selected-item .price-adds {
+    max-width: 320px;
+}

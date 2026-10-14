@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cozy Craft Gallery</title>
+<meta name="description" content="Cozy Craft Gallery is a small handmade shop in Antipolo, Rizal offering crochet creations, fuzzy wire crafts, and personalized gifts.">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/01-base.css">
+<link rel="stylesheet" href="css/02-layout.css">
+<link rel="stylesheet" href="css/03-components.css">
+<link rel="stylesheet" href="css/04-order-form.css">
+<link rel="stylesheet" href="css/05-greeting-card.css">
+<link rel="stylesheet" href="css/06-login.css">
+<link rel="stylesheet" href="css/07-bag.css">
+<link rel="stylesheet" href="css/08-bag-state.css">
+<link rel="stylesheet" href="css/09-animations.css">
+<link rel="stylesheet" href="css/10-responsive.css">
+</head>
+<body>
+<input class="state-input" type="radio" name="Bag item: Bag Crochet (Crochet, ₱250 each)" id="q-crochet-bag-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bag Crochet (Crochet, ₱250 each)" id="q-crochet-bag-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bag Crochet (Crochet, ₱250 each)" id="q-crochet-bag-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bag Crochet (Crochet, ₱250 each)" id="q-crochet-bag-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bag Crochet (Crochet, ₱250 each)" id="q-crochet-bag-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bag Crochet (Crochet, ₱250 each)" id="q-crochet-bag-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Blanket Crochet (Crochet, ₱280 each)" id="q-crochet-blanket-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Blanket Crochet (Crochet, ₱280 each)" id="q-crochet-blanket-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Blanket Crochet (Crochet, ₱280 each)" id="q-crochet-blanket-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Blanket Crochet (Crochet, ₱280 each)" id="q-crochet-blanket-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Blanket Crochet (Crochet, ₱280 each)" id="q-crochet-blanket-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Blanket Crochet (Crochet, ₱280 each)" id="q-crochet-blanket-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Keychains Crochet (Crochet, ₱65 each)" id="q-crochet-keychains-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains Crochet (Crochet, ₱65 each)" id="q-crochet-keychains-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains Crochet (Crochet, ₱65 each)" id="q-crochet-keychains-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains Crochet (Crochet, ₱65 each)" id="q-crochet-keychains-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains Crochet (Crochet, ₱65 each)" id="q-crochet-keychains-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains Crochet (Crochet, ₱65 each)" id="q-crochet-keychains-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Coin Purse (Crochet, ₱80 each)" id="q-crochet-coin-purse-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Coin Purse (Crochet, ₱80 each)" id="q-crochet-coin-purse-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Coin Purse (Crochet, ₱80 each)" id="q-crochet-coin-purse-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Coin Purse (Crochet, ₱80 each)" id="q-crochet-coin-purse-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Coin Purse (Crochet, ₱80 each)" id="q-crochet-coin-purse-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Coin Purse (Crochet, ₱80 each)" id="q-crochet-coin-purse-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Flower Bouquets (Crochet, ₱200 each)" id="q-crochet-flower-bouquets-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Crochet, ₱200 each)" id="q-crochet-flower-bouquets-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Crochet, ₱200 each)" id="q-crochet-flower-bouquets-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Crochet, ₱200 each)" id="q-crochet-flower-bouquets-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Crochet, ₱200 each)" id="q-crochet-flower-bouquets-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Crochet, ₱200 each)" id="q-crochet-flower-bouquets-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Headband (Crochet, ₱120 each)" id="q-crochet-headband-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Crochet, ₱120 each)" id="q-crochet-headband-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Crochet, ₱120 each)" id="q-crochet-headband-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Crochet, ₱120 each)" id="q-crochet-headband-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Crochet, ₱120 each)" id="q-crochet-headband-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Crochet, ₱120 each)" id="q-crochet-headband-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Plushies (Crochet, ₱150 each)" id="q-crochet-plushies-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Plushies (Crochet, ₱150 each)" id="q-crochet-plushies-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Plushies (Crochet, ₱150 each)" id="q-crochet-plushies-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Plushies (Crochet, ₱150 each)" id="q-crochet-plushies-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Plushies (Crochet, ₱150 each)" id="q-crochet-plushies-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Plushies (Crochet, ₱150 each)" id="q-crochet-plushies-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Mug Warmer (Crochet, ₱85 each)" id="q-crochet-mug-warmer-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mug Warmer (Crochet, ₱85 each)" id="q-crochet-mug-warmer-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mug Warmer (Crochet, ₱85 each)" id="q-crochet-mug-warmer-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mug Warmer (Crochet, ₱85 each)" id="q-crochet-mug-warmer-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mug Warmer (Crochet, ₱85 each)" id="q-crochet-mug-warmer-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mug Warmer (Crochet, ₱85 each)" id="q-crochet-mug-warmer-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Clothes (₱250) (Crochet, ₱250 each)" id="q-crochet-clothes-250-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱250) (Crochet, ₱250 each)" id="q-crochet-clothes-250-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱250) (Crochet, ₱250 each)" id="q-crochet-clothes-250-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱250) (Crochet, ₱250 each)" id="q-crochet-clothes-250-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱250) (Crochet, ₱250 each)" id="q-crochet-clothes-250-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱250) (Crochet, ₱250 each)" id="q-crochet-clothes-250-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Clothes (₱300) (Crochet, ₱300 each)" id="q-crochet-clothes-300-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱300) (Crochet, ₱300 each)" id="q-crochet-clothes-300-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱300) (Crochet, ₱300 each)" id="q-crochet-clothes-300-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱300) (Crochet, ₱300 each)" id="q-crochet-clothes-300-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱300) (Crochet, ₱300 each)" id="q-crochet-clothes-300-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱300) (Crochet, ₱300 each)" id="q-crochet-clothes-300-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Clothes (₱350) (Crochet, ₱350 each)" id="q-crochet-clothes-350-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱350) (Crochet, ₱350 each)" id="q-crochet-clothes-350-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱350) (Crochet, ₱350 each)" id="q-crochet-clothes-350-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱350) (Crochet, ₱350 each)" id="q-crochet-clothes-350-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱350) (Crochet, ₱350 each)" id="q-crochet-clothes-350-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Clothes (₱350) (Crochet, ₱350 each)" id="q-crochet-clothes-350-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Hat Crochet (Crochet, ₱160 each)" id="q-crochet-hat-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Hat Crochet (Crochet, ₱160 each)" id="q-crochet-hat-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Hat Crochet (Crochet, ₱160 each)" id="q-crochet-hat-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Hat Crochet (Crochet, ₱160 each)" id="q-crochet-hat-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Hat Crochet (Crochet, ₱160 each)" id="q-crochet-hat-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Hat Crochet (Crochet, ₱160 each)" id="q-crochet-hat-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Flower Bouquets (Fuzzy Wire, ₱350 each)" id="q-wire-flower-bouquets-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Fuzzy Wire, ₱350 each)" id="q-wire-flower-bouquets-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Fuzzy Wire, ₱350 each)" id="q-wire-flower-bouquets-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Fuzzy Wire, ₱350 each)" id="q-wire-flower-bouquets-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Fuzzy Wire, ₱350 each)" id="q-wire-flower-bouquets-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Flower Bouquets (Fuzzy Wire, ₱350 each)" id="q-wire-flower-bouquets-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Keychains (Fuzzy Wire, ₱45 each)" id="q-wire-keychains-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains (Fuzzy Wire, ₱45 each)" id="q-wire-keychains-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains (Fuzzy Wire, ₱45 each)" id="q-wire-keychains-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains (Fuzzy Wire, ₱45 each)" id="q-wire-keychains-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains (Fuzzy Wire, ₱45 each)" id="q-wire-keychains-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Keychains (Fuzzy Wire, ₱45 each)" id="q-wire-keychains-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Mirror Lace (Fuzzy Wire, ₱35 each)" id="q-wire-mirror-lace-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mirror Lace (Fuzzy Wire, ₱35 each)" id="q-wire-mirror-lace-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mirror Lace (Fuzzy Wire, ₱35 each)" id="q-wire-mirror-lace-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mirror Lace (Fuzzy Wire, ₱35 each)" id="q-wire-mirror-lace-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mirror Lace (Fuzzy Wire, ₱35 each)" id="q-wire-mirror-lace-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mirror Lace (Fuzzy Wire, ₱35 each)" id="q-wire-mirror-lace-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Headband (Fuzzy Wire, ₱80 each)" id="q-wire-headband-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Fuzzy Wire, ₱80 each)" id="q-wire-headband-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Fuzzy Wire, ₱80 each)" id="q-wire-headband-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Fuzzy Wire, ₱80 each)" id="q-wire-headband-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Fuzzy Wire, ₱80 each)" id="q-wire-headband-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Headband (Fuzzy Wire, ₱80 each)" id="q-wire-headband-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Single Flower (Fuzzy Wire, ₱65 each)" id="q-wire-single-flower-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Single Flower (Fuzzy Wire, ₱65 each)" id="q-wire-single-flower-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Single Flower (Fuzzy Wire, ₱65 each)" id="q-wire-single-flower-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Single Flower (Fuzzy Wire, ₱65 each)" id="q-wire-single-flower-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Single Flower (Fuzzy Wire, ₱65 each)" id="q-wire-single-flower-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Single Flower (Fuzzy Wire, ₱65 each)" id="q-wire-single-flower-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Table Lamp Design (Fuzzy Wire, ₱85 each)" id="q-wire-table-lamp-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Table Lamp Design (Fuzzy Wire, ₱85 each)" id="q-wire-table-lamp-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Table Lamp Design (Fuzzy Wire, ₱85 each)" id="q-wire-table-lamp-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Table Lamp Design (Fuzzy Wire, ₱85 each)" id="q-wire-table-lamp-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Table Lamp Design (Fuzzy Wire, ₱85 each)" id="q-wire-table-lamp-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Table Lamp Design (Fuzzy Wire, ₱85 each)" id="q-wire-table-lamp-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Stuff Toys (Fuzzy Wire, ₱120 each)" id="q-wire-stuff-toys-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Stuff Toys (Fuzzy Wire, ₱120 each)" id="q-wire-stuff-toys-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Stuff Toys (Fuzzy Wire, ₱120 each)" id="q-wire-stuff-toys-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Stuff Toys (Fuzzy Wire, ₱120 each)" id="q-wire-stuff-toys-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Stuff Toys (Fuzzy Wire, ₱120 each)" id="q-wire-stuff-toys-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Stuff Toys (Fuzzy Wire, ₱120 each)" id="q-wire-stuff-toys-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Bracelets (Fuzzy Wire, ₱55 each)" id="q-wire-bracelets-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bracelets (Fuzzy Wire, ₱55 each)" id="q-wire-bracelets-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bracelets (Fuzzy Wire, ₱55 each)" id="q-wire-bracelets-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bracelets (Fuzzy Wire, ₱55 each)" id="q-wire-bracelets-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bracelets (Fuzzy Wire, ₱55 each)" id="q-wire-bracelets-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Bracelets (Fuzzy Wire, ₱55 each)" id="q-wire-bracelets-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Mini Xmas Tree (Fuzzy Wire, ₱120 each)" id="q-wire-mini-xmas-tree-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mini Xmas Tree (Fuzzy Wire, ₱120 each)" id="q-wire-mini-xmas-tree-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mini Xmas Tree (Fuzzy Wire, ₱120 each)" id="q-wire-mini-xmas-tree-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mini Xmas Tree (Fuzzy Wire, ₱120 each)" id="q-wire-mini-xmas-tree-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mini Xmas Tree (Fuzzy Wire, ₱120 each)" id="q-wire-mini-xmas-tree-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Mini Xmas Tree (Fuzzy Wire, ₱120 each)" id="q-wire-mini-xmas-tree-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Bag item: Cable/Cord Wraps (Fuzzy Wire, ₱75 each)" id="q-wire-cable-wraps-0" value="Removed (Qty 0)" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Cable/Cord Wraps (Fuzzy Wire, ₱75 each)" id="q-wire-cable-wraps-1" value="Qty 1" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Cable/Cord Wraps (Fuzzy Wire, ₱75 each)" id="q-wire-cable-wraps-2" value="Qty 2" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Cable/Cord Wraps (Fuzzy Wire, ₱75 each)" id="q-wire-cable-wraps-3" value="Qty 3" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Cable/Cord Wraps (Fuzzy Wire, ₱75 each)" id="q-wire-cable-wraps-4" value="Qty 4" form="order-form">
+<input class="state-input in-bag" type="radio" name="Bag item: Cable/Cord Wraps (Fuzzy Wire, ₱75 each)" id="q-wire-cable-wraps-5" value="Qty 5" form="order-form">
+<input class="state-input" type="radio" name="Custom gift idea" id="g-sweetheart" value="Boquette with Initials" form="order-form">
+<input class="state-input" type="radio" name="Custom gift idea" id="g-bunny-garden" value="Table Cloth" form="order-form">
+<input class="state-input" type="radio" name="Custom gift idea" id="g-pastel-bloom" value="Pet Replica Mini Sculptures" form="order-form">
+<input class="state-input" type="radio" name="Custom gift idea" id="g-desk-buddy" value="Bookmark" form="order-form">
+<input class="state-input" type="radio" name="Custom gift idea" id="g-bestie-box" value="Emotional Support Plushie" form="order-form">
+<input class="state-input" type="radio" name="Custom gift idea" id="g-none" value="None" form="order-form">
+<div class="tally" aria-hidden="true"><i class="t-crochet-bag"></i><i class="t-crochet-blanket"></i><i class="t-crochet-keychains"></i><i class="t-crochet-coin-purse"></i><i class="t-crochet-flower-bouquets"></i><i class="t-crochet-headband"></i><i class="t-crochet-plushies"></i><i class="t-crochet-mug-warmer"></i><i class="t-crochet-clothes-250"></i><i class="t-crochet-clothes-300"></i><i class="t-crochet-clothes-350"></i><i class="t-crochet-hat"></i><i class="t-wire-flower-bouquets"></i><i class="t-wire-keychains"></i><i class="t-wire-mirror-lace"></i><i class="t-wire-headband"></i><i class="t-wire-single-flower"></i><i class="t-wire-table-lamp"></i><i class="t-wire-stuff-toys"></i><i class="t-wire-bracelets"></i><i class="t-wire-mini-xmas-tree"></i><i class="t-wire-cable-wraps"></i></div>
+
+<div class="chibi-layer" aria-hidden="true">
+<div class="chibi-walker chibi-walker--girl"><img class="chibi chibi--girl" src="assets/chibi-girl.svg" alt="" width="100" height="125"></div>
+<div class="chibi-walker chibi-walker--boy"><img class="chibi chibi--boy" src="assets/chibi-boy.svg" alt="" width="100" height="125"></div>
+</div>
+
+<div class="login-screen" id="login" role="dialog" aria-labelledby="login-title">
+<div class="login-card">
+<a href="#home" class="login-close btn btn--small" aria-label="Close login and go to the shop">&#10005;</a>
+<div class="login-badge"><img src="assets/cozy-craft-gallery-logo.png" alt="" width="700" height="622" loading="lazy" decoding="async"></div>
+<p class="eyebrow">Login demo</p>
+<h2 class="login-title" id="login-title">Cozy Craft Gallery</h2>
+<p class="login-welcome">Welcome, cozy friend! Sign in to peek inside our little handmade shop.</p>
+<form class="login-form" autocomplete="off">
+<div class="field">
+<input type="text" id="login-user" name="username" placeholder=" " required minlength="2" maxlength="30" autocomplete="off">
+<label for="login-user">Username</label>
+<span class="field-line" aria-hidden="true"></span>
+</div>
+<div class="field">
+<input type="password" id="login-pass" name="password" placeholder=" " required minlength="4" maxlength="40" autocomplete="off">
+<label for="login-pass">Password</label>
+<span class="field-line" aria-hidden="true"></span>
+</div>
+<button type="button" class="btn btn--block enter-disabled" disabled>Enter Shop</button>
+<a href="#home" class="btn btn--block enter-link">Enter Shop</a>
+</form>
+<a href="#home" class="login-guest">Continue to the shop without signing in (DEMO)</a>
+<p class="login-switch">New to the shop? <a href="#signup">Create an account</a></p>
+<p class="login-note">Visual demo only. No account is created and no password is checked or saved.</p>
+</div>
+<div class="login-card signup-card" id="signup" role="dialog" aria-labelledby="signup-title">
+<a href="#home" class="login-close btn btn--small" aria-label="Close sign up and go to the shop">&#10005;</a>
+<div class="login-badge"><img src="assets/cozy-craft-gallery-logo.png" alt="" width="700" height="622" loading="lazy" decoding="async"></div>
+<p class="eyebrow">Sign up demo</p>
+<h2 class="login-title" id="signup-title">Join Cozy Craft Gallery</h2>
+<p class="login-welcome">Create a cozy-shop profile to get started.</p>
+<form class="login-form" action="#home" method="get" autocomplete="off">
+<div class="field">
+<input type="text" id="signup-name" placeholder=" " required minlength="2" maxlength="60" autocomplete="name">
+<label for="signup-name">Your name</label>
+<span class="field-line" aria-hidden="true"></span>
+</div>
+<div class="field">
+<input type="email" id="signup-email" placeholder=" " required maxlength="254" autocomplete="email">
+<label for="signup-email">Email address</label>
+<span class="field-line" aria-hidden="true"></span>
+</div>
+<div class="field">
+<input type="text" id="signup-user" placeholder=" " required minlength="2" maxlength="30" autocomplete="username">
+<label for="signup-user">Username</label>
+<span class="field-line" aria-hidden="true"></span>
+</div>
+<div class="field">
+<input type="password" id="signup-pass" placeholder=" " required minlength="4" maxlength="40" autocomplete="new-password">
+<label for="signup-pass">Password</label>
+<span class="field-line" aria-hidden="true"></span>
+</div>
+<button type="submit" class="btn btn--block">Preview Sign Up (DEMO)</button>
+</form>
+<p class="login-note">Demo only. Your details are not sent or saved.</p>
+<a href="#login" class="login-guest">Already have an account? Log in</a>
+</div>
+</div>
+
+<a class="skip-link" href="#collections">Skip to the collections</a>
+
+<header class="site-header">
+<a class="brand" href="#home" aria-label="Cozy Craft Gallery, home">
+<img class="brand-logo" src="assets/cozy-craft-gallery-logo.png" alt="Cozy Craft Gallery logo" width="700" height="622" fetchpriority="high">
+<span class="brand-text">Cozy Craft <span>Gallery</span></span>
+</a>
+<nav class="main-nav" aria-label="Main navigation">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#crochet">Crochet Collection</a></li>
+<li><a href="#fuzzy-wire">Fuzzy Wire Collection</a></li>
+<li><a href="#custom-gifts">Custom Gifts</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#bag">My Bag<span class="bag-count"></span></a></li>
+<li><a href="#order">Order Details</a></li>
+<li><a href="#login">Logout</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<div class="home-view">
+<section class="hero" id="home" aria-labelledby="hero-title">
+<span class="deco deco-1" aria-hidden="true">&#9829;</span>
+<span class="deco deco-2" aria-hidden="true">&#10047;</span>
+<span class="deco deco-3" aria-hidden="true">&#10022;</span>
+<span class="deco deco-4" aria-hidden="true">&#10048;</span>
+<p class="eyebrow">Handmade crochet &middot; fuzzy wire &middot; personalized gifts</p>
+<h1 id="hero-title">Little Handmade Things, <span>Made with Love.</span></h1>
+<p class="hero-text">Cozy Craft Gallery offers handmade crochet items, fuzzy wire crafts, and personalized gifts, all made by hand in Antipolo, Rizal.</p>
+<a href="#collections" class="btn btn--lg">Explore Collections</a>
+</section>
+
+<section class="categories" id="collections" aria-labelledby="collections-title">
+<h2 class="section-title" id="collections-title">Our Two Collections</h2>
+<div class="category-grid">
+<article class="category-card category-card--crochet">
+<img class="coll-logo-lg" src="assets/logos/crochet-collection-logo.png" alt="Crochet Collection logo" width="500" height="455" loading="lazy" decoding="async">
+<div class="category-text">
+<h3>Crochet Collection</h3>
+<p>Bags, blankets, bouquets, keychains, and cozy wearables stitched with love.</p>
+<a href="#crochet" class="btn">Explore Crochet</a>
+</div>
+</article>
+<article class="category-card category-card--wire">
+<img class="coll-logo-lg" src="assets/logos/fuzzy-wire-collection-logo.png" alt="Fuzzy Wire Collection logo" width="500" height="436" loading="lazy" decoding="async">
+<div class="category-text">
+<h3>Fuzzy Wire Collection</h3>
+<p>Fluffy flowers, bouquets, keychains, lamps, and little decorations twisted by hand.</p>
+<a href="#fuzzy-wire" class="btn">Explore Fuzzy Wire</a>
+</div>
+</article>
+</div>
+</section>
+
+<section class="best" id="best-sellers" aria-labelledby="best-title">
+<h2 class="section-title" id="best-title">TOP 3 BEST SELLERS</h2>
+<div class="featured featured--crochet">
+<header class="feat-head">
+<img class="coll-logo" src="assets/logos/crochet-collection-logo.png" alt="" width="500" height="455" loading="lazy" decoding="async">
+<div>
+<h3 class="feat-title">Crochet Top 3</h3>
+<p>Our most loved handmade crochet pieces.</p>
+</div>
+</header>
+<div class="product-grid product-grid--featured">
+<article class="product-card product-card--featured">
+<div class="product-media"><img src="assets/products/crochet/blanket-crochet.jpg" alt="Blanket Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Blanket Crochet</h4>
+<p class="product-price">₱280</p>
+<p class="product-desc">A cozy handmade crochet blanket made for snuggling up. A thoughtful gift for yourself or someone you love.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-blanket">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-blanket">Buy Now</a>
+<span class="add-set add-crochet-blanket"><label class="btn btn--small a1" for="q-crochet-blanket-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-blanket-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-blanket-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-blanket-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-blanket-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card product-card--featured">
+<div class="product-media"><img src="assets/products/crochet/flower-bouquet-crochet.jpg" alt="Flower Bouquets (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Flower Bouquets</h4>
+<p class="product-price">₱200</p>
+<p class="product-desc">A bouquet of crochet flowers that never wilt. A lasting gift for birthdays, graduations, or just because.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-flower-bouquets">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-flower-bouquets">Buy Now</a>
+<span class="add-set add-crochet-flower-bouquets"><label class="btn btn--small a1" for="q-crochet-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card product-card--featured">
+<div class="product-media"><img src="assets/products/crochet/mug-warmer.jpg" alt="Mug Warmer (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Mug Warmer</h4>
+<p class="product-price">₱85</p>
+<p class="product-desc">A crochet mug warmer that gives your favorite cup a cozy handmade touch.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-mug-warmer">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-mug-warmer">Buy Now</a>
+<span class="add-set add-crochet-mug-warmer"><label class="btn btn--small a1" for="q-crochet-mug-warmer-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-mug-warmer-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-mug-warmer-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-mug-warmer-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-mug-warmer-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+</div>
+<p class="view-all-row"><a class="btn btn--small btn--ghost" href="#crochet">View All Crochet</a></p>
+</div>
+<div class="featured featured--wire">
+<header class="feat-head">
+<img class="coll-logo" src="assets/logos/fuzzy-wire-collection-logo.png" alt="" width="500" height="436" loading="lazy" decoding="async">
+<div>
+<h3 class="feat-title">Fuzzy Wire Top 3</h3>
+<p>Fluffy handmade crafts that never wilt.</p>
+</div>
+</header>
+<div class="product-grid product-grid--featured">
+<article class="product-card product-card--featured">
+<div class="product-media"><img src="assets/products/fuzzy-wire/mirror-lace.jpg" alt="Mirror Lace (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Mirror Lace</h4>
+<p class="product-price">₱35</p>
+<p class="product-desc">A small mirror framed with fuzzy wire, made to carry along. A cute treat for yourself or a friend.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-mirror-lace">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-mirror-lace">Buy Now</a>
+<span class="add-set add-wire-mirror-lace"><label class="btn btn--small a1" for="q-wire-mirror-lace-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mirror-lace-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mirror-lace-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mirror-lace-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mirror-lace-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card product-card--featured">
+<div class="product-media"><img src="assets/products/fuzzy-wire/table-lamp-design.jpg" alt="Table Lamp Design (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Table Lamp Design</h4>
+<p class="product-price">₱85</p>
+<p class="product-desc">A fuzzy wire flower lamp design that adds a soft, cozy glow to a desk or bedside. A cute decoration to brighten your space.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-table-lamp">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-table-lamp">Buy Now</a>
+<span class="add-set add-wire-table-lamp"><label class="btn btn--small a1" for="q-wire-table-lamp-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-table-lamp-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-table-lamp-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-table-lamp-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-table-lamp-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card product-card--featured">
+<div class="product-media"><img src="assets/products/fuzzy-wire/mini-xmas-tree.jpg" alt="Mini Xmas Tree (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Mini Xmas Tree</h4>
+<p class="product-price">₱120</p>
+<p class="product-desc">A mini fuzzy wire Christmas tree in pastel colors. A cute holiday decoration or a festive gift.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-mini-xmas-tree">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-mini-xmas-tree">Buy Now</a>
+<span class="add-set add-wire-mini-xmas-tree"><label class="btn btn--small a1" for="q-wire-mini-xmas-tree-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mini-xmas-tree-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mini-xmas-tree-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mini-xmas-tree-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mini-xmas-tree-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+</div>
+<p class="view-all-row"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">View All Fuzzy Wire</a></p>
+</div>
+</section>
+
+<section class="gifts" id="custom-gifts" aria-labelledby="gifts-title">
+<header>
+<p class="eyebrow">Sample ideas</p>
+<h2 class="section-title" id="gifts-title">Custom Gifts Made with Love</h2>
+<p class="section-intro">Each handmade piece is made with care and can be customized to suit your favorite colors, initials, or special moments. These sample ideas show the style and feel of what we can create.</p>
+</header>
+<div class="gift-grid">
+<article class="product-card gift-card gift-sweetheart">
+<div class="product-media"><img src="assets/products/custom/boquette.jpg" alt="Boquette with Initials custom gift" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Sample gift idea</p>
+<h4 class="product-name">Boquette with Initials</h4>
+<p class="product-desc">A handcrafted crochet boquette with soft pastel flowers and a personalized initial detail for a meaningful, sentimental gift.</p>
+<p class="product-price">₱250</p>
+<div class="product-actions">
+<label class="btn btn--small" for="g-sweetheart"><span class="gl-off">Choose This Gift</span><span class="gl-on">&#10003; Chosen</span></label>
+<a class="btn btn--small btn--ghost" href="#order">Order Details</a>
+</div>
+</div>
+</article>
+<article class="product-card gift-card gift-bunny-garden">
+<div class="product-media"><img src="assets/products/custom/table%20cloth.jpg" alt="Table Cloth custom gift" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Sample gift idea</p>
+<h4 class="product-name">Table Cloth</h4>
+<p class="product-desc">A cozy handmade crochet table cloth with a delicate lace-like texture, perfect for brightening up a dining area or cozy corner.</p>
+<p class="product-price">₱350</p>
+<div class="product-actions">
+<label class="btn btn--small" for="g-bunny-garden"><span class="gl-off">Choose This Gift</span><span class="gl-on">&#10003; Chosen</span></label>
+<a class="btn btn--small btn--ghost" href="#order">Order Details</a>
+</div>
+</div>
+</article>
+<article class="product-card gift-card gift-pastel-bloom">
+<div class="product-media"><img src="assets/products/custom/mini%20animals.jpg" alt="Pet Replica Mini Sculptures custom gift" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Sample gift idea</p>
+<h4 class="product-name">Pet Replica Mini Sculptures</h4>
+<p class="product-desc">Mini pet-inspired yarn sculptures made with soft, charming details that capture your favorite furry friend in a cute handmade form.</p>
+<p class="product-price">₱180</p>
+<div class="product-actions">
+<label class="btn btn--small" for="g-pastel-bloom"><span class="gl-off">Choose This Gift</span><span class="gl-on">&#10003; Chosen</span></label>
+<a class="btn btn--small btn--ghost" href="#order">Order Details</a>
+</div>
+</div>
+</article>
+<article class="product-card gift-card gift-desk-buddy">
+<div class="product-media"><img src="assets/products/custom/bookmark.jpg" alt="Bookmark custom gift" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Sample gift idea</p>
+<h4 class="product-name">Bookmark</h4>
+<p class="product-desc">A handcrafted crochet bookmark with a floral accent, made to keep your place with a sweet, personal handmade touch.</p>
+<p class="product-price">₱80</p>
+<div class="product-actions">
+<label class="btn btn--small" for="g-desk-buddy"><span class="gl-off">Choose This Gift</span><span class="gl-on">&#10003; Chosen</span></label>
+<a class="btn btn--small btn--ghost" href="#order">Order Details</a>
+</div>
+</div>
+</article>
+<article class="product-card gift-card gift-bestie-box">
+<div class="product-media"><img src="assets/products/custom/emotional%20support.jpg" alt="Emotional Support Plushie custom gift" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Sample gift idea</p>
+<h4 class="product-name">Emotional Support Plushie</h4>
+<p class="product-desc">A fluffy handmade plushie with a comforting, cheerful design made to brighten someone&rsquo;s day and offer a little extra love.</p>
+<p class="product-price">₱150</p>
+<div class="product-actions">
+<label class="btn btn--small" for="g-bestie-box"><span class="gl-off">Choose This Gift</span><span class="gl-on">&#10003; Chosen</span></label>
+<a class="btn btn--small btn--ghost" href="#order">Order Details</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<section class="about" id="about" aria-labelledby="about-title">
+<div class="about-photo">
+<figure class="about-art">
+<img src="assets/us/about-us-collage.jpg" alt="Photo collage of the Cozy Craft Gallery team" width="1152" height="2048" loading="lazy" decoding="async">
+</figure>
+<span class="crochet-deco crochet-flower crochet-flower--rose" aria-hidden="true"></span>
+<span class="crochet-deco crochet-flower crochet-flower--lavender" aria-hidden="true"></span>
+<span class="crochet-deco crochet-heart crochet-heart--rose" aria-hidden="true"></span>
+<span class="crochet-deco crochet-heart crochet-heart--peach" aria-hidden="true"></span>
+<span class="crochet-deco yarn-ball" aria-hidden="true"></span>
+</div>
+<div class="about-text">
+<p class="eyebrow">About Us</p>
+<h2 class="section-title" id="about-title">COZY CRAFTS GALLERY</h2>
+<p class="about-copy">Welcome to "Cozy Crafts Gallery", where creativity, comfort, and handmade beauty come together! We are a group of passionate BSIT-1B students who created this store to showcase unique and adorable crafts made with love and creativity.</p>
+<p class="about-copy">Our store specializes in "fuzzy wire crafts and crochet products", offering a variety of handmade items such as crochet bags, flower bouquets, keychains, plushies, coin purses, and other charming accessories. Each creation is designed to bring happiness, warmth, and a personal touch to everyday life.</p>
+<p class="about-copy">At Cozy Crafts Gallery, we believe that every handmade product tells a story. Our goal is to provide creative, beautiful, and affordable crafts that make perfect gifts for your loved ones or special treats for yourself. Through our online store, we aim to make discovering and purchasing handmade treasures simple, enjoyable, and convenient.</p>
+<p class="about-copy">Thank you for visiting Cozy Crafts Gallery and supporting our small creative venture. We hope our handmade creations bring a little extra coziness and joy to your day!</p>
+<div class="about-team">
+<h3 class="about-team-title">Meet Our Team</h3>
+<p class="about-team-class">"BSIT-1B"</p>
+<ul class="team-list">
+<li>Ducalan, Emron Gabriel S.</li>
+<li>Catubay, Nick Angela V.</li>
+<li>Agbayani, Jiane Kirby M.</li>
+<li>Delos Santos, Aicelle Rhianne M.</li>
+<li>Tabuniag, Pearl Kristine</li>
+</ul>
+</div>
+<p class="about-sign">Handmade with love, crafted with creativity, and shared with warmth.&#9825;</p>
+</div>
+</section>
+
+<section class="social" id="social" aria-labelledby="social-title">
+<h2 class="section-title" id="social-title">Find Us Online</h2>
+<p class="section-intro">Say hello and see our latest handmade pieces.</p>
+<ul class="social-links">
+                        <li>
+                            <a class="social-btn social-btn--instagram" href="https://www.instagram.com/cozycrafts_gallery/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)">
+                                <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></span>
+                                <span class="social-label">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-btn social-btn--facebook" href="https://www.facebook.com/profile.php?id=61591893293345" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)">
+                                <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 8.5V7c0-.7.3-1 1-1h2V2.5h-2.8C11.5 2.5 10 4.2 10 6.6v1.9H7.5V12H10v9.5h4V12h2.7l.5-3.5H14z"/></svg></span>
+                                <span class="social-label">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-btn social-btn--tiktok" href="https://www.tiktok.com/@cozycraftsandgallery" target="_blank" rel="noopener noreferrer" aria-label="TikTok (opens in a new tab)">
+                                <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M14 3v11.2a3.6 3.6 0 1 1-3.6-3.6M14 3c.3 2.7 2.1 4.4 5 4.6"/></svg></span>
+                                <span class="social-label">TikTok</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-btn social-btn--messenger" href="https://www.facebook.com/messages/t/1236778996181094" target="_blank" rel="noopener noreferrer" aria-label="Messenger (opens in a new tab)">
+                                <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.5C6.7 2.5 2.5 6.5 2.5 11.5c0 2.7 1.3 5.1 3.3 6.7V21.5l3.1-1.7c.9.2 1.8.4 2.7.4 5.3 0 9.5-4 9.5-9S17.3 2.5 12 2.5z"/><path class="messenger-bolt" d="M6.8 13.8l3.4-3.7 2.3 2.3 3.6-2.4-3.4 3.7-2.3-2.3z"/></svg></span>
+                                <span class="social-label">Messenger</span>
+                            </a>
+                        </li>
+                    </ul>
+</section>
+</div>
+
+<section class="view view--crochet" id="crochet" aria-labelledby="crochet-title">
+<a class="btn btn--small btn--ghost back-link" href="#home">Back to Home</a>
+<header class="view-head">
+<img class="coll-logo-lg" src="assets/logos/crochet-collection-logo.png" alt="Crochet Collection logo" width="500" height="455">
+<div>
+<p class="eyebrow">Collection</p>
+<h2 class="section-title" id="crochet-title">Crochet Collection</h2>
+<p>Soft, cozy, and made by hand. All 10 crochet items are here, with prices in Philippine pesos.</p>
+</div>
+</header>
+<div class="product-grid">
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/bag-crochet.jpg" alt="Bag Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Bag Crochet</h4>
+<p class="product-price">₱250</p>
+<p class="product-desc">A handmade crochet bag for carrying your everyday little things. A cute way to add a handmade touch to any outfit.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-bag">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-bag">Buy Now</a>
+<span class="add-set add-crochet-bag"><label class="btn btn--small a1" for="q-crochet-bag-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-bag-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-bag-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-bag-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-bag-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/blanket-crochet.jpg" alt="Blanket Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Blanket Crochet</h4>
+<p class="product-price">₱280</p>
+<p class="product-desc">A cozy handmade crochet blanket made for snuggling up. A thoughtful gift for yourself or someone you love.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-blanket">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-blanket">Buy Now</a>
+<span class="add-set add-crochet-blanket"><label class="btn btn--small a1" for="q-crochet-blanket-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-blanket-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-blanket-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-blanket-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-blanket-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/keychains-crochet.jpg" alt="Keychains Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Keychains Crochet</h4>
+<p class="product-price">₱65</p>
+<p class="product-desc">Tiny crochet bow keychains to brighten up your keys or bag. Small, cute, and perfect as little gifts.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-keychains">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-keychains">Buy Now</a>
+<span class="add-set add-crochet-keychains"><label class="btn btn--small a1" for="q-crochet-keychains-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-keychains-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-keychains-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-keychains-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-keychains-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/coin-purse.jpg" alt="Coin Purse (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Coin Purse</h4>
+<p class="product-price">₱80</p>
+<p class="product-desc">A small crochet coin purse for coins, cards, and little treasures. Cute and handy to tuck into a bag.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-coin-purse">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-coin-purse">Buy Now</a>
+<span class="add-set add-crochet-coin-purse"><label class="btn btn--small a1" for="q-crochet-coin-purse-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-coin-purse-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-coin-purse-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-coin-purse-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-coin-purse-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/flower-bouquet-crochet.jpg" alt="Flower Bouquets (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Flower Bouquets</h4>
+<p class="product-price">₱200</p>
+<p class="product-desc">A bouquet of crochet flowers that never wilt. A lasting gift for birthdays, graduations, or just because.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-flower-bouquets">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-flower-bouquets">Buy Now</a>
+<span class="add-set add-crochet-flower-bouquets"><label class="btn btn--small a1" for="q-crochet-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/headband-crochet.jpg" alt="Headband (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Headband</h4>
+<p class="product-price">₱120</p>
+<p class="product-desc">A handmade crochet headband that adds a sweet handmade touch to your hairstyle.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-headband">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-headband">Buy Now</a>
+<span class="add-set add-crochet-headband"><label class="btn btn--small a1" for="q-crochet-headband-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-headband-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-headband-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-headband-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-headband-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/plushies-crochet.jpg" alt="Plushies (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Plushies</h4>
+<p class="product-price">₱150</p>
+<p class="product-desc">Cuddly handmade crochet plushies, made to hug and to gift.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-plushies">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-plushies">Buy Now</a>
+<span class="add-set add-crochet-plushies"><label class="btn btn--small a1" for="q-crochet-plushies-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-plushies-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-plushies-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-plushies-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-plushies-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/mug-warmer.jpg" alt="Mug Warmer (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Mug Warmer</h4>
+<p class="product-price">₱85</p>
+<p class="product-desc">A crochet mug warmer that gives your favorite cup a cozy handmade touch.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-mug-warmer">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-mug-warmer">Buy Now</a>
+<span class="add-set add-crochet-mug-warmer"><label class="btn btn--small a1" for="q-crochet-mug-warmer-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-mug-warmer-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-mug-warmer-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-mug-warmer-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-mug-warmer-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/clothes-crochet.jpg" alt="Clothes (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Croptop</h4>
+<p class="product-price">₱250</p>
+<p class="product-desc">Handmade crochet clothing made with care. Choose the price that fits what you have in mind, and the shop will confirm the details.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-clothes">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-clothes">Buy Now</a>
+<div class="price-adds"><p class="price-adds-title"></p><span class="add-set add-crochet-clothes-250"><label class="btn btn--small a1" for="q-crochet-clothes-250-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-clothes-250-2">+1 ₱250 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-250-3">+1 ₱250 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-250-4">+1 ₱250 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-250-5">+1 ₱250 (4 in bag)</label><span class="btn btn--small amax">₱250: 5 in bag, max</span></span></div>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/crochet/hat-crochet.jpg" alt="Hat Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Crochet</p>
+<h4 class="product-name">Hat Crochet</h4>
+<p class="product-price">₱160</p>
+<p class="product-desc">A handmade crochet hat for a cozy, cute look.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-crochet-hat">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-crochet-hat">Buy Now</a>
+<span class="add-set add-crochet-hat"><label class="btn btn--small a1" for="q-crochet-hat-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-hat-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-hat-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-hat-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-hat-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+</div>
+<a class="btn btn--small btn--ghost back-link back-link--bottom" href="#home">Back to Home</a>
+</section>
+
+<section class="view view--wire" id="fuzzy-wire" aria-labelledby="wire-title">
+<a class="btn btn--small btn--ghost back-link" href="#home">Back to Home</a>
+<header class="view-head">
+<img class="coll-logo-lg" src="assets/logos/fuzzy-wire-collection-logo.png" alt="Fuzzy Wire Collection logo" width="500" height="436">
+<div>
+<p class="eyebrow">Collection</p>
+<h2 class="section-title" id="wire-title">Fuzzy Wire Collection</h2>
+<p>Fluffy flowers and little crafts twisted by hand. All 10 fuzzy wire items are here, with prices in Philippine pesos.</p>
+</div>
+</header>
+<div class="product-grid">
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/flower-bouquet-fuzzy-wire.jpg" alt="Flower Bouquets (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Flower Bouquets</h4>
+<p class="product-price">₱350</p>
+<p class="product-desc">A fuzzy wire flower bouquet that never wilts. A sweet gift for birthdays, anniversaries, or just because.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-flower-bouquets">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-flower-bouquets">Buy Now</a>
+<span class="add-set add-wire-flower-bouquets"><label class="btn btn--small a1" for="q-wire-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/keychains-fuzzy-wire.jpg" alt="Keychains (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Keychains</h4>
+<p class="product-price">₱45</p>
+<p class="product-desc">Cute fuzzy wire keychains in fun little shapes. Clip one onto your keys or bag for a handmade touch.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-keychains">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-keychains">Buy Now</a>
+<span class="add-set add-wire-keychains"><label class="btn btn--small a1" for="q-wire-keychains-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-keychains-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-keychains-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-keychains-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-keychains-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/mirror-lace.jpg" alt="Mirror Lace (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Mirror Lace</h4>
+<p class="product-price">₱35</p>
+<p class="product-desc">A small mirror framed with fuzzy wire, made to carry along. A cute treat for yourself or a friend.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-mirror-lace">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-mirror-lace">Buy Now</a>
+<span class="add-set add-wire-mirror-lace"><label class="btn btn--small a1" for="q-wire-mirror-lace-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mirror-lace-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mirror-lace-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mirror-lace-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mirror-lace-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/headband-fuzzy-wire.jpg" alt="Headband (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Headband</h4>
+<p class="product-price">₱80</p>
+<p class="product-desc">A fuzzy wire headband decorated with handmade flowers. A sweet accessory for everyday wear or special days.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-headband">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-headband">Buy Now</a>
+<span class="add-set add-wire-headband"><label class="btn btn--small a1" for="q-wire-headband-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-headband-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-headband-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-headband-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-headband-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/single-flower-fuzzy-wire.jpg" alt="Single Flower (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Single Flower</h4>
+<p class="product-price">₱65</p>
+<p class="product-desc">One handmade fuzzy wire flower, simple and sweet. Lovely as a small gift or a stem to keep.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-single-flower">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-single-flower">Buy Now</a>
+<span class="add-set add-wire-single-flower"><label class="btn btn--small a1" for="q-wire-single-flower-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-single-flower-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-single-flower-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-single-flower-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-single-flower-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/table-lamp-design.jpg" alt="Table Lamp Design (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Table Lamp Design</h4>
+<p class="product-price">₱85</p>
+<p class="product-desc">A fuzzy wire flower lamp design that adds a soft, cozy glow to a desk or bedside. A cute decoration to brighten your space.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-table-lamp">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-table-lamp">Buy Now</a>
+<span class="add-set add-wire-table-lamp"><label class="btn btn--small a1" for="q-wire-table-lamp-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-table-lamp-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-table-lamp-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-table-lamp-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-table-lamp-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/stuff-toys-fuzzy-wire.jpg" alt="Stuff Toys (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Stuff Toys</h4>
+<p class="product-price">₱120</p>
+<p class="product-desc">Cute handmade fuzzy wire stuffed toys, like a little bunny. Small companions for desks, shelves, or gifts.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-stuff-toys">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-stuff-toys">Buy Now</a>
+<span class="add-set add-wire-stuff-toys"><label class="btn btn--small a1" for="q-wire-stuff-toys-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-stuff-toys-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-stuff-toys-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-stuff-toys-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-stuff-toys-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/bracelets-fuzzy-wire.jpg" alt="Bracelets (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Bracelets</h4>
+<p class="product-price">₱55</p>
+<p class="product-desc">Fuzzy wire flower bracelets made to wear. A cute handmade accessory for your wrist.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-bracelets">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-bracelets">Buy Now</a>
+<span class="add-set add-wire-bracelets"><label class="btn btn--small a1" for="q-wire-bracelets-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-bracelets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-bracelets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-bracelets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-bracelets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/mini-xmas-tree.jpg" alt="Mini Xmas Tree (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Mini Xmas Tree</h4>
+<p class="product-price">₱120</p>
+<p class="product-desc">A mini fuzzy wire Christmas tree in pastel colors. A cute holiday decoration or a festive gift.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-mini-xmas-tree">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-mini-xmas-tree">Buy Now</a>
+<span class="add-set add-wire-mini-xmas-tree"><label class="btn btn--small a1" for="q-wire-mini-xmas-tree-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mini-xmas-tree-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mini-xmas-tree-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mini-xmas-tree-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mini-xmas-tree-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-media"><img src="assets/products/fuzzy-wire/cable-cord-wraps.jpg" alt="Cable/Cord Wraps (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async"></div>
+<div class="product-info">
+<p class="product-tag">Fuzzy Wire</p>
+<h4 class="product-name">Cable/Cord Wraps</h4>
+<p class="product-price">₱75</p>
+<p class="product-desc">Fuzzy wire wraps that dress up a charging cable with little flowers and vines. A cute way to personalize your cable.</p>
+<div class="product-actions">
+<a class="btn btn--small btn--ghost" href="#detail-wire-cable-wraps">View Details</a>
+<a class="btn btn--small btn--light" href="#buy-wire-cable-wraps">Buy Now</a>
+<span class="add-set add-wire-cable-wraps"><label class="btn btn--small a1" for="q-wire-cable-wraps-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-cable-wraps-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-cable-wraps-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-cable-wraps-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-cable-wraps-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+</article>
+</div>
+<a class="btn btn--small btn--ghost back-link back-link--bottom" href="#home">Back to Home</a>
+</section>
+
+<section class="view view--detail view--crochet" id="detail-crochet-bag" aria-labelledby="dt-crochet-bag">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/bag-crochet.jpg" alt="Bag Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-bag">Bag Crochet</h2>
+<p class="detail-price">₱250</p>
+<p>A handmade crochet bag for carrying your everyday little things. A cute way to add a handmade touch to any outfit.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-bag"><label class="btn btn--small a1" for="q-crochet-bag-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-bag-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-bag-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-bag-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-bag-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-bag">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-blanket" aria-labelledby="dt-crochet-blanket">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/blanket-crochet.jpg" alt="Blanket Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-blanket">Blanket Crochet</h2>
+<p class="detail-price">₱280</p>
+<p>A cozy handmade crochet blanket made for snuggling up. A thoughtful gift for yourself or someone you love.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-blanket"><label class="btn btn--small a1" for="q-crochet-blanket-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-blanket-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-blanket-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-blanket-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-blanket-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-blanket">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-keychains" aria-labelledby="dt-crochet-keychains">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/keychains-crochet.jpg" alt="Keychains Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-keychains">Keychains Crochet</h2>
+<p class="detail-price">₱65</p>
+<p>Tiny crochet bow keychains to brighten up your keys or bag. Small, cute, and perfect as little gifts.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-keychains"><label class="btn btn--small a1" for="q-crochet-keychains-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-keychains-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-keychains-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-keychains-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-keychains-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-keychains">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-coin-purse" aria-labelledby="dt-crochet-coin-purse">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/coin-purse.jpg" alt="Coin Purse (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-coin-purse">Coin Purse</h2>
+<p class="detail-price">₱80</p>
+<p>A small crochet coin purse for coins, cards, and little treasures. Cute and handy to tuck into a bag.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-coin-purse"><label class="btn btn--small a1" for="q-crochet-coin-purse-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-coin-purse-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-coin-purse-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-coin-purse-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-coin-purse-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-coin-purse">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-flower-bouquets" aria-labelledby="dt-crochet-flower-bouquets">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/flower-bouquet-crochet.jpg" alt="Flower Bouquets (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-flower-bouquets">Flower Bouquets</h2>
+<p class="detail-price">₱200</p>
+<p>A bouquet of crochet flowers that never wilt. A lasting gift for birthdays, graduations, or just because.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-flower-bouquets"><label class="btn btn--small a1" for="q-crochet-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-flower-bouquets">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-headband" aria-labelledby="dt-crochet-headband">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/headband-crochet.jpg" alt="Headband (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-headband">Headband</h2>
+<p class="detail-price">₱120</p>
+<p>A handmade crochet headband that adds a sweet handmade touch to your hairstyle.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-headband"><label class="btn btn--small a1" for="q-crochet-headband-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-headband-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-headband-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-headband-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-headband-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-headband">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-plushies" aria-labelledby="dt-crochet-plushies">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/plushies-crochet.jpg" alt="Plushies (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-plushies">Plushies</h2>
+<p class="detail-price">₱150</p>
+<p>Cuddly handmade crochet plushies, made to hug and to gift.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-plushies"><label class="btn btn--small a1" for="q-crochet-plushies-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-plushies-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-plushies-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-plushies-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-plushies-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-plushies">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-mug-warmer" aria-labelledby="dt-crochet-mug-warmer">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/mug-warmer.jpg" alt="Mug Warmer (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-mug-warmer">Mug Warmer</h2>
+<p class="detail-price">₱85</p>
+<p>A crochet mug warmer that gives your favorite cup a cozy handmade touch.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-mug-warmer"><label class="btn btn--small a1" for="q-crochet-mug-warmer-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-mug-warmer-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-mug-warmer-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-mug-warmer-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-mug-warmer-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-mug-warmer">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-clothes" aria-labelledby="dt-crochet-clothes">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="Clothes (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-clothes">Croptop</h2>
+<p class="detail-price">₱250</p>
+<p>Handmade crochet clothing made with care. Choose the size that fits perfectly for you.</p>
+<p class="detail-note"> The shop will confirm the details with you.</p>
+<div class="detail-actions">
+<div class="price-adds"><p class="price-adds-title">Choose a size</p><span class="add-set add-crochet-clothes-250"><label class="btn btn--small a1" for="q-crochet-clothes-250-1">Add Small to bag</label><label class="btn btn--small a2" for="q-crochet-clothes-250-2">+1 ₱250 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-250-3">+1 ₱250 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-250-4">+1 ₱250 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-250-5">+1 ₱250 (4 in bag)</label><span class="btn btn--small amax">₱250: 5 in bag, max</span></span><span class="add-set add-crochet-clothes-300"><label class="btn btn--small a1" for="q-crochet-clothes-300-1">Add Medium to Bag</label><label class="btn btn--small a2" for="q-crochet-clothes-300-2">+1 ₱300 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-300-3">+1 ₱300 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-300-4">+1 ₱300 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-300-5">+1 ₱300 (4 in bag)</label><span class="btn btn--small amax">₱300: 5 in bag, max</span></span><span class="add-set add-crochet-clothes-350"><label class="btn btn--small a1" for="q-crochet-clothes-350-1">Add Large to Bag</label><label class="btn btn--small a2" for="q-crochet-clothes-350-2">+1 ₱350 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-350-3">+1 ₱350 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-350-4">+1 ₱350 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-350-5">+1 ₱350 (4 in bag)</label><span class="btn btn--small amax">₱350: 5 in bag, max</span></span></div>
+<a class="btn btn--small btn--light" href="#buy-crochet-clothes">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--crochet" id="detail-crochet-hat" aria-labelledby="dt-crochet-hat">
+<div class="detail-bar"><a class="btn btn--small" href="#crochet" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/crochet/hat-crochet.jpg" alt="Hat Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Crochet</p>
+<h2 id="dt-crochet-hat">Hat Crochet</h2>
+<p class="detail-price">₱160</p>
+<p>A handmade crochet hat for a cozy, cute look.</p>
+
+<div class="detail-actions">
+<span class="add-set add-crochet-hat"><label class="btn btn--small a1" for="q-crochet-hat-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-hat-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-hat-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-hat-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-hat-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-crochet-hat">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#crochet">Back to Crochet Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-flower-bouquets" aria-labelledby="dt-wire-flower-bouquets">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/flower-bouquet-fuzzy-wire.jpg" alt="Flower Bouquets (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-flower-bouquets">Flower Bouquets</h2>
+<p class="detail-price">₱350</p>
+<p>A fuzzy wire flower bouquet that never wilts. A sweet gift for birthdays, anniversaries, or just because.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-flower-bouquets"><label class="btn btn--small a1" for="q-wire-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-flower-bouquets">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-keychains" aria-labelledby="dt-wire-keychains">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/keychains-fuzzy-wire.jpg" alt="Keychains (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-keychains">Keychains</h2>
+<p class="detail-price">₱45</p>
+<p>Cute fuzzy wire keychains in fun little shapes. Clip one onto your keys or bag for a handmade touch.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-keychains"><label class="btn btn--small a1" for="q-wire-keychains-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-keychains-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-keychains-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-keychains-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-keychains-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-keychains">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-mirror-lace" aria-labelledby="dt-wire-mirror-lace">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/mirror-lace.jpg" alt="Mirror Lace (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-mirror-lace">Mirror Lace</h2>
+<p class="detail-price">₱35</p>
+<p>A small mirror framed with fuzzy wire, made to carry along. A cute treat for yourself or a friend.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-mirror-lace"><label class="btn btn--small a1" for="q-wire-mirror-lace-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mirror-lace-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mirror-lace-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mirror-lace-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mirror-lace-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-mirror-lace">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-headband" aria-labelledby="dt-wire-headband">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/headband-fuzzy-wire.jpg" alt="Headband (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-headband">Headband</h2>
+<p class="detail-price">₱80</p>
+<p>A fuzzy wire headband decorated with handmade flowers. A sweet accessory for everyday wear or special days.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-headband"><label class="btn btn--small a1" for="q-wire-headband-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-headband-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-headband-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-headband-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-headband-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-headband">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-single-flower" aria-labelledby="dt-wire-single-flower">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/single-flower-fuzzy-wire.jpg" alt="Single Flower (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-single-flower">Single Flower</h2>
+<p class="detail-price">₱65</p>
+<p>One handmade fuzzy wire flower, simple and sweet. Lovely as a small gift or a stem to keep.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-single-flower"><label class="btn btn--small a1" for="q-wire-single-flower-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-single-flower-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-single-flower-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-single-flower-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-single-flower-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-single-flower">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-table-lamp" aria-labelledby="dt-wire-table-lamp">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/table-lamp-design.jpg" alt="Table Lamp Design (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-table-lamp">Table Lamp Design</h2>
+<p class="detail-price">₱85</p>
+<p>A fuzzy wire flower lamp design that adds a soft, cozy glow to a desk or bedside. A cute decoration to brighten your space.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-table-lamp"><label class="btn btn--small a1" for="q-wire-table-lamp-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-table-lamp-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-table-lamp-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-table-lamp-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-table-lamp-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-table-lamp">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-stuff-toys" aria-labelledby="dt-wire-stuff-toys">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/stuff-toys-fuzzy-wire.jpg" alt="Stuff Toys (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-stuff-toys">Stuff Toys</h2>
+<p class="detail-price">₱120</p>
+<p>Cute handmade fuzzy wire stuffed toys, like a little bunny. Small companions for desks, shelves, or gifts.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-stuff-toys"><label class="btn btn--small a1" for="q-wire-stuff-toys-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-stuff-toys-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-stuff-toys-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-stuff-toys-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-stuff-toys-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-stuff-toys">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-bracelets" aria-labelledby="dt-wire-bracelets">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/bracelets-fuzzy-wire.jpg" alt="Bracelets (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-bracelets">Bracelets</h2>
+<p class="detail-price">₱55</p>
+<p>Fuzzy wire flower bracelets made to wear. A cute handmade accessory for your wrist.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-bracelets"><label class="btn btn--small a1" for="q-wire-bracelets-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-bracelets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-bracelets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-bracelets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-bracelets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-bracelets">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-mini-xmas-tree" aria-labelledby="dt-wire-mini-xmas-tree">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/mini-xmas-tree.jpg" alt="Mini Xmas Tree (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-mini-xmas-tree">Mini Xmas Tree</h2>
+<p class="detail-price">₱120</p>
+<p>A mini fuzzy wire Christmas tree in pastel colors. A cute holiday decoration or a festive gift.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-mini-xmas-tree"><label class="btn btn--small a1" for="q-wire-mini-xmas-tree-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mini-xmas-tree-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mini-xmas-tree-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mini-xmas-tree-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mini-xmas-tree-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-mini-xmas-tree">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+<section class="view view--detail view--wire" id="detail-wire-cable-wraps" aria-labelledby="dt-wire-cable-wraps">
+<div class="detail-bar"><a class="btn btn--small" href="#fuzzy-wire" aria-label="Close product details">&#10005; Close</a></div>
+<article class="detail-grid">
+<img src="assets/products/fuzzy-wire/cable-cord-wraps.jpg" alt="Cable/Cord Wraps (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div class="detail-text">
+<p class="product-tag">Fuzzy Wire</p>
+<h2 id="dt-wire-cable-wraps">Cable/Cord Wraps</h2>
+<p class="detail-price">₱75</p>
+<p>Fuzzy wire wraps that dress up a charging cable with little flowers and vines. A cute way to personalize your cable.</p>
+
+<div class="detail-actions">
+<span class="add-set add-wire-cable-wraps"><label class="btn btn--small a1" for="q-wire-cable-wraps-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-cable-wraps-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-cable-wraps-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-cable-wraps-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-cable-wraps-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+<a class="btn btn--small btn--light" href="#buy-wire-cable-wraps">Buy Now</a>
+</div>
+</div>
+</article>
+<p class="detail-links"><a class="btn btn--small btn--ghost" href="#fuzzy-wire">Back to Fuzzy Wire Collection</a><a class="btn btn--small btn--ghost" href="#home">Back to Home</a></p>
+</section>
+
+<section class="view view--bag" id="bag" aria-labelledby="bag-title">
+<a class="btn btn--small btn--ghost back-link" href="#home">Back to Home</a>
+<header class="view-head view-head--plain">
+<div>
+<p class="eyebrow">Shopping Bag</p>
+<h2 class="section-title" id="bag-title">Your Bag</h2>
+<p>Items from both collections live in this one bag. Tap a number to change the quantity, or Remove to take an item out.</p>
+</div>
+</header>
+<div class="bag-empty">
+<p class="bag-empty-title">Your bag is empty.</p>
+<p>Press &ldquo;Add to Bag&rdquo; on any product and it will show up here.</p>
+</div>
+<ul class="bag-list">
+<li class="bagrow row-crochet-bag">
+<img src="assets/products/crochet/bag-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Bag Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱250 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-bag-1">1</label><label class="qchip cq2" for="q-crochet-bag-2">2</label><label class="qchip cq3" for="q-crochet-bag-3">3</label><label class="qchip cq4" for="q-crochet-bag-4">4</label><label class="qchip cq5" for="q-crochet-bag-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-bag-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-blanket">
+<img src="assets/products/crochet/blanket-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Blanket Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱280 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-blanket-1">1</label><label class="qchip cq2" for="q-crochet-blanket-2">2</label><label class="qchip cq3" for="q-crochet-blanket-3">3</label><label class="qchip cq4" for="q-crochet-blanket-4">4</label><label class="qchip cq5" for="q-crochet-blanket-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-blanket-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-keychains">
+<img src="assets/products/crochet/keychains-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Keychains Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱65 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-keychains-1">1</label><label class="qchip cq2" for="q-crochet-keychains-2">2</label><label class="qchip cq3" for="q-crochet-keychains-3">3</label><label class="qchip cq4" for="q-crochet-keychains-4">4</label><label class="qchip cq5" for="q-crochet-keychains-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-keychains-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-coin-purse">
+<img src="assets/products/crochet/coin-purse.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Coin Purse</p>
+<p class="ci-tag">Crochet &middot; ₱80 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-coin-purse-1">1</label><label class="qchip cq2" for="q-crochet-coin-purse-2">2</label><label class="qchip cq3" for="q-crochet-coin-purse-3">3</label><label class="qchip cq4" for="q-crochet-coin-purse-4">4</label><label class="qchip cq5" for="q-crochet-coin-purse-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-coin-purse-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-flower-bouquets">
+<img src="assets/products/crochet/flower-bouquet-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Flower Bouquets</p>
+<p class="ci-tag">Crochet &middot; ₱200 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-flower-bouquets-1">1</label><label class="qchip cq2" for="q-crochet-flower-bouquets-2">2</label><label class="qchip cq3" for="q-crochet-flower-bouquets-3">3</label><label class="qchip cq4" for="q-crochet-flower-bouquets-4">4</label><label class="qchip cq5" for="q-crochet-flower-bouquets-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-flower-bouquets-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-headband">
+<img src="assets/products/crochet/headband-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Headband</p>
+<p class="ci-tag">Crochet &middot; ₱120 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-headband-1">1</label><label class="qchip cq2" for="q-crochet-headband-2">2</label><label class="qchip cq3" for="q-crochet-headband-3">3</label><label class="qchip cq4" for="q-crochet-headband-4">4</label><label class="qchip cq5" for="q-crochet-headband-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-headband-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-plushies">
+<img src="assets/products/crochet/plushies-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Plushies</p>
+<p class="ci-tag">Crochet &middot; ₱150 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-plushies-1">1</label><label class="qchip cq2" for="q-crochet-plushies-2">2</label><label class="qchip cq3" for="q-crochet-plushies-3">3</label><label class="qchip cq4" for="q-crochet-plushies-4">4</label><label class="qchip cq5" for="q-crochet-plushies-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-plushies-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-mug-warmer">
+<img src="assets/products/crochet/mug-warmer.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Mug Warmer</p>
+<p class="ci-tag">Crochet &middot; ₱85 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-mug-warmer-1">1</label><label class="qchip cq2" for="q-crochet-mug-warmer-2">2</label><label class="qchip cq3" for="q-crochet-mug-warmer-3">3</label><label class="qchip cq4" for="q-crochet-mug-warmer-4">4</label><label class="qchip cq5" for="q-crochet-mug-warmer-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-mug-warmer-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-clothes-250">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Clothes (₱250)</p>
+<p class="ci-tag">Crochet &middot; ₱250 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-clothes-250-1">1</label><label class="qchip cq2" for="q-crochet-clothes-250-2">2</label><label class="qchip cq3" for="q-crochet-clothes-250-3">3</label><label class="qchip cq4" for="q-crochet-clothes-250-4">4</label><label class="qchip cq5" for="q-crochet-clothes-250-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-clothes-250-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-clothes-300">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Clothes (₱300)</p>
+<p class="ci-tag">Crochet &middot; ₱300 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-clothes-300-1">1</label><label class="qchip cq2" for="q-crochet-clothes-300-2">2</label><label class="qchip cq3" for="q-crochet-clothes-300-3">3</label><label class="qchip cq4" for="q-crochet-clothes-300-4">4</label><label class="qchip cq5" for="q-crochet-clothes-300-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-clothes-300-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-clothes-350">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Clothes (₱350)</p>
+<p class="ci-tag">Crochet &middot; ₱350 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-clothes-350-1">1</label><label class="qchip cq2" for="q-crochet-clothes-350-2">2</label><label class="qchip cq3" for="q-crochet-clothes-350-3">3</label><label class="qchip cq4" for="q-crochet-clothes-350-4">4</label><label class="qchip cq5" for="q-crochet-clothes-350-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-clothes-350-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-crochet-hat">
+<img src="assets/products/crochet/hat-crochet.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Hat Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱160 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-crochet-hat-1">1</label><label class="qchip cq2" for="q-crochet-hat-2">2</label><label class="qchip cq3" for="q-crochet-hat-3">3</label><label class="qchip cq4" for="q-crochet-hat-4">4</label><label class="qchip cq5" for="q-crochet-hat-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-crochet-hat-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-flower-bouquets">
+<img src="assets/products/fuzzy-wire/flower-bouquet-fuzzy-wire.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Flower Bouquets</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱350 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-flower-bouquets-1">1</label><label class="qchip cq2" for="q-wire-flower-bouquets-2">2</label><label class="qchip cq3" for="q-wire-flower-bouquets-3">3</label><label class="qchip cq4" for="q-wire-flower-bouquets-4">4</label><label class="qchip cq5" for="q-wire-flower-bouquets-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-flower-bouquets-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-keychains">
+<img src="assets/products/fuzzy-wire/keychains-fuzzy-wire.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Keychains</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱45 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-keychains-1">1</label><label class="qchip cq2" for="q-wire-keychains-2">2</label><label class="qchip cq3" for="q-wire-keychains-3">3</label><label class="qchip cq4" for="q-wire-keychains-4">4</label><label class="qchip cq5" for="q-wire-keychains-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-keychains-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-mirror-lace">
+<img src="assets/products/fuzzy-wire/mirror-lace.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Mirror Lace</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱35 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-mirror-lace-1">1</label><label class="qchip cq2" for="q-wire-mirror-lace-2">2</label><label class="qchip cq3" for="q-wire-mirror-lace-3">3</label><label class="qchip cq4" for="q-wire-mirror-lace-4">4</label><label class="qchip cq5" for="q-wire-mirror-lace-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-mirror-lace-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-headband">
+<img src="assets/products/fuzzy-wire/headband-fuzzy-wire.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Headband</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱80 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-headband-1">1</label><label class="qchip cq2" for="q-wire-headband-2">2</label><label class="qchip cq3" for="q-wire-headband-3">3</label><label class="qchip cq4" for="q-wire-headband-4">4</label><label class="qchip cq5" for="q-wire-headband-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-headband-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-single-flower">
+<img src="assets/products/fuzzy-wire/single-flower-fuzzy-wire.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Single Flower</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱65 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-single-flower-1">1</label><label class="qchip cq2" for="q-wire-single-flower-2">2</label><label class="qchip cq3" for="q-wire-single-flower-3">3</label><label class="qchip cq4" for="q-wire-single-flower-4">4</label><label class="qchip cq5" for="q-wire-single-flower-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-single-flower-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-table-lamp">
+<img src="assets/products/fuzzy-wire/table-lamp-design.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Table Lamp Design</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱85 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-table-lamp-1">1</label><label class="qchip cq2" for="q-wire-table-lamp-2">2</label><label class="qchip cq3" for="q-wire-table-lamp-3">3</label><label class="qchip cq4" for="q-wire-table-lamp-4">4</label><label class="qchip cq5" for="q-wire-table-lamp-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-table-lamp-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-stuff-toys">
+<img src="assets/products/fuzzy-wire/stuff-toys-fuzzy-wire.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Stuff Toys</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱120 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-stuff-toys-1">1</label><label class="qchip cq2" for="q-wire-stuff-toys-2">2</label><label class="qchip cq3" for="q-wire-stuff-toys-3">3</label><label class="qchip cq4" for="q-wire-stuff-toys-4">4</label><label class="qchip cq5" for="q-wire-stuff-toys-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-stuff-toys-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-bracelets">
+<img src="assets/products/fuzzy-wire/bracelets-fuzzy-wire.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Bracelets</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱55 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-bracelets-1">1</label><label class="qchip cq2" for="q-wire-bracelets-2">2</label><label class="qchip cq3" for="q-wire-bracelets-3">3</label><label class="qchip cq4" for="q-wire-bracelets-4">4</label><label class="qchip cq5" for="q-wire-bracelets-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-bracelets-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-mini-xmas-tree">
+<img src="assets/products/fuzzy-wire/mini-xmas-tree.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Mini Xmas Tree</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱120 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-mini-xmas-tree-1">1</label><label class="qchip cq2" for="q-wire-mini-xmas-tree-2">2</label><label class="qchip cq3" for="q-wire-mini-xmas-tree-3">3</label><label class="qchip cq4" for="q-wire-mini-xmas-tree-4">4</label><label class="qchip cq5" for="q-wire-mini-xmas-tree-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-mini-xmas-tree-0">Remove</label>
+</div>
+</li>
+<li class="bagrow row-wire-cable-wraps">
+<img src="assets/products/fuzzy-wire/cable-cord-wraps.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Cable/Cord Wraps</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱75 each</p>
+<div class="ci-qty"><span>Qty</span><label class="qchip cq1" for="q-wire-cable-wraps-1">1</label><label class="qchip cq2" for="q-wire-cable-wraps-2">2</label><label class="qchip cq3" for="q-wire-cable-wraps-3">3</label><label class="qchip cq4" for="q-wire-cable-wraps-4">4</label><label class="qchip cq5" for="q-wire-cable-wraps-5">5</label></div>
+</div>
+<div class="ci-side">
+<p class="ci-sub"></p>
+<label class="ci-remove" for="q-wire-cable-wraps-0">Remove</label>
+</div>
+</li>
+</ul>
+<div class="bag-foot">
+<p class="bag-total-row"><span>Items: <strong class="t-items"></strong></span><span>Total: <strong class="t-total"></strong></span></p>
+<p class="bag-note">Estimated total. Delivery fees and customization fees are confirmed by the shop.</p>
+<div class="bag-buttons">
+<a class="btn" href="#order">Proceed to Order Details</a>
+<a class="btn btn--small btn--ghost" href="#collections">Continue Shopping</a>
+</div>
+</div>
+</section>
+
+<section class="view view--order" id="order" aria-labelledby="order-title">
+<a class="btn btn--small btn--ghost back-link" href="#home">Back to Home</a>
+<header class="view-head view-head--plain">
+<div>
+<p class="eyebrow">Order Details</p>
+<h2 class="section-title" id="order-title">Tell Us What You&rsquo;d Like</h2>
+<p>Fill in the form and your email app will open with your request. Your order is not confirmed until the shop replies to you.</p>
+</div>
+</header>
+
+<div class="pick-default">
+<p><strong>Tip:</strong> Use &ldquo;Add to Bag&rdquo; on any product and your items will be listed below. &ldquo;Buy Now&rdquo; brings you here with that product ready to add.</p>
+</div>
+<div class="selected-item" id="buy-crochet-bag">
+<img src="assets/products/crochet/bag-crochet.jpg" alt="Bag Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Bag Crochet</h3>
+<p class="selected-price">₱250</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-bag"><label class="btn btn--small a1" for="q-crochet-bag-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-bag-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-bag-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-bag-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-bag-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-blanket">
+<img src="assets/products/crochet/blanket-crochet.jpg" alt="Blanket Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Blanket Crochet</h3>
+<p class="selected-price">₱280</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-blanket"><label class="btn btn--small a1" for="q-crochet-blanket-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-blanket-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-blanket-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-blanket-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-blanket-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-keychains">
+<img src="assets/products/crochet/keychains-crochet.jpg" alt="Keychains Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Keychains Crochet</h3>
+<p class="selected-price">₱65</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-keychains"><label class="btn btn--small a1" for="q-crochet-keychains-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-keychains-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-keychains-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-keychains-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-keychains-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-coin-purse">
+<img src="assets/products/crochet/coin-purse.jpg" alt="Coin Purse (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Coin Purse</h3>
+<p class="selected-price">₱80</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-coin-purse"><label class="btn btn--small a1" for="q-crochet-coin-purse-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-coin-purse-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-coin-purse-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-coin-purse-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-coin-purse-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-flower-bouquets">
+<img src="assets/products/crochet/flower-bouquet-crochet.jpg" alt="Flower Bouquets (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Flower Bouquets</h3>
+<p class="selected-price">₱200</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-flower-bouquets"><label class="btn btn--small a1" for="q-crochet-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-headband">
+<img src="assets/products/crochet/headband-crochet.jpg" alt="Headband (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Headband</h3>
+<p class="selected-price">₱120</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-headband"><label class="btn btn--small a1" for="q-crochet-headband-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-headband-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-headband-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-headband-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-headband-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-plushies">
+<img src="assets/products/crochet/plushies-crochet.jpg" alt="Plushies (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Plushies</h3>
+<p class="selected-price">₱150</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-plushies"><label class="btn btn--small a1" for="q-crochet-plushies-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-plushies-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-plushies-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-plushies-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-plushies-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-mug-warmer">
+<img src="assets/products/crochet/mug-warmer.jpg" alt="Mug Warmer (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Mug Warmer</h3>
+<p class="selected-price">₱85</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-mug-warmer"><label class="btn btn--small a1" for="q-crochet-mug-warmer-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-mug-warmer-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-mug-warmer-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-mug-warmer-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-mug-warmer-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-clothes">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="Clothes (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Clothes</h3>
+<p class="selected-price">₱250–₱350</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<div class="price-adds"><p class="price-adds-title">Choose a price</p><span class="add-set add-crochet-clothes-250"><label class="btn btn--small a1" for="q-crochet-clothes-250-1">Add ₱250 to Bag</label><label class="btn btn--small a2" for="q-crochet-clothes-250-2">+1 ₱250 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-250-3">+1 ₱250 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-250-4">+1 ₱250 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-250-5">+1 ₱250 (4 in bag)</label><span class="btn btn--small amax">₱250: 5 in bag, max</span></span><span class="add-set add-crochet-clothes-300"><label class="btn btn--small a1" for="q-crochet-clothes-300-1">Add ₱300 to Bag</label><label class="btn btn--small a2" for="q-crochet-clothes-300-2">+1 ₱300 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-300-3">+1 ₱300 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-300-4">+1 ₱300 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-300-5">+1 ₱300 (4 in bag)</label><span class="btn btn--small amax">₱300: 5 in bag, max</span></span><span class="add-set add-crochet-clothes-350"><label class="btn btn--small a1" for="q-crochet-clothes-350-1">Add ₱350 to Bag</label><label class="btn btn--small a2" for="q-crochet-clothes-350-2">+1 ₱350 (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-clothes-350-3">+1 ₱350 (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-clothes-350-4">+1 ₱350 (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-clothes-350-5">+1 ₱350 (4 in bag)</label><span class="btn btn--small amax">₱350: 5 in bag, max</span></span></div>
+</div>
+</div>
+<div class="selected-item" id="buy-crochet-hat">
+<img src="assets/products/crochet/hat-crochet.jpg" alt="Hat Crochet (Crochet)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Crochet</p>
+<h3>Hat Crochet</h3>
+<p class="selected-price">₱160</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-crochet-hat"><label class="btn btn--small a1" for="q-crochet-hat-1">Add to Bag</label><label class="btn btn--small a2" for="q-crochet-hat-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-crochet-hat-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-crochet-hat-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-crochet-hat-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-flower-bouquets">
+<img src="assets/products/fuzzy-wire/flower-bouquet-fuzzy-wire.jpg" alt="Flower Bouquets (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Flower Bouquets</h3>
+<p class="selected-price">₱350</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-flower-bouquets"><label class="btn btn--small a1" for="q-wire-flower-bouquets-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-flower-bouquets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-flower-bouquets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-flower-bouquets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-flower-bouquets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-keychains">
+<img src="assets/products/fuzzy-wire/keychains-fuzzy-wire.jpg" alt="Keychains (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Keychains</h3>
+<p class="selected-price">₱45</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-keychains"><label class="btn btn--small a1" for="q-wire-keychains-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-keychains-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-keychains-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-keychains-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-keychains-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-mirror-lace">
+<img src="assets/products/fuzzy-wire/mirror-lace.jpg" alt="Mirror Lace (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Mirror Lace</h3>
+<p class="selected-price">₱35</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-mirror-lace"><label class="btn btn--small a1" for="q-wire-mirror-lace-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mirror-lace-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mirror-lace-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mirror-lace-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mirror-lace-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-headband">
+<img src="assets/products/fuzzy-wire/headband-fuzzy-wire.jpg" alt="Headband (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Headband</h3>
+<p class="selected-price">₱80</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-headband"><label class="btn btn--small a1" for="q-wire-headband-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-headband-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-headband-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-headband-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-headband-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-single-flower">
+<img src="assets/products/fuzzy-wire/single-flower-fuzzy-wire.jpg" alt="Single Flower (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Single Flower</h3>
+<p class="selected-price">₱65</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-single-flower"><label class="btn btn--small a1" for="q-wire-single-flower-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-single-flower-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-single-flower-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-single-flower-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-single-flower-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-table-lamp">
+<img src="assets/products/fuzzy-wire/table-lamp-design.jpg" alt="Table Lamp Design (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Table Lamp Design</h3>
+<p class="selected-price">₱85</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-table-lamp"><label class="btn btn--small a1" for="q-wire-table-lamp-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-table-lamp-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-table-lamp-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-table-lamp-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-table-lamp-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-stuff-toys">
+<img src="assets/products/fuzzy-wire/stuff-toys-fuzzy-wire.jpg" alt="Stuff Toys (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Stuff Toys</h3>
+<p class="selected-price">₱120</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-stuff-toys"><label class="btn btn--small a1" for="q-wire-stuff-toys-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-stuff-toys-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-stuff-toys-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-stuff-toys-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-stuff-toys-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-bracelets">
+<img src="assets/products/fuzzy-wire/bracelets-fuzzy-wire.jpg" alt="Bracelets (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Bracelets</h3>
+<p class="selected-price">₱55</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-bracelets"><label class="btn btn--small a1" for="q-wire-bracelets-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-bracelets-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-bracelets-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-bracelets-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-bracelets-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-mini-xmas-tree">
+<img src="assets/products/fuzzy-wire/mini-xmas-tree.jpg" alt="Mini Xmas Tree (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Mini Xmas Tree</h3>
+<p class="selected-price">₱120</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-mini-xmas-tree"><label class="btn btn--small a1" for="q-wire-mini-xmas-tree-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-mini-xmas-tree-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-mini-xmas-tree-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-mini-xmas-tree-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-mini-xmas-tree-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+<div class="selected-item" id="buy-wire-cable-wraps">
+<img src="assets/products/fuzzy-wire/cable-cord-wraps.jpg" alt="Cable/Cord Wraps (Fuzzy Wire)" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="product-tag">Buy Now &middot; Fuzzy Wire</p>
+<h3>Cable/Cord Wraps</h3>
+<p class="selected-price">₱75</p>
+<p class="selected-note">Add it to your order, then fill in your details below.</p>
+<span class="add-set add-wire-cable-wraps"><label class="btn btn--small a1" for="q-wire-cable-wraps-1">Add to Bag</label><label class="btn btn--small a2" for="q-wire-cable-wraps-2">Add Another (1 in bag)</label><label class="btn btn--small a3" for="q-wire-cable-wraps-3">Add Another (2 in bag)</label><label class="btn btn--small a4" for="q-wire-cable-wraps-4">Add Another (3 in bag)</label><label class="btn btn--small a5" for="q-wire-cable-wraps-5">Add Another (4 in bag)</label><span class="btn btn--small amax">5 in bag, max</span></span>
+</div>
+</div>
+
+<form class="order-form" id="order-form" action="mailto:CozyCraftGallery@gmail.com" method="post" enctype="text/plain">
+<fieldset class="of-block">
+<legend>1. About you</legend>
+<div class="form-row">
+<div class="form-field">
+<label for="o-name">Customer name</label>
+<input type="text" id="o-name" name="Name" required minlength="2" maxlength="60" autocomplete="name" placeholder="Juana Dela Cruz">
+</div>
+<div class="form-field">
+<label for="o-phone">Contact number</label>
+<input type="tel" id="o-phone" name="Contact number" required pattern="[0-9+\- ]{7,16}" maxlength="16" autocomplete="tel" placeholder="09XX XXX XXXX" title="Use numbers, spaces, + or - (7 to 16 characters)">
+</div>
+</div>
+<div class="form-field">
+<label for="o-email">Email address <span class="optional">(optional)</span></label>
+<input type="email" id="o-email" name="Email" maxlength="80" autocomplete="email" placeholder="you@example.com">
+</div>
+</fieldset>
+
+<fieldset class="of-block">
+<legend>2. Your items</legend>
+<div class="order-items">
+<div class="order-empty">
+<p class="bag-empty-title">No items in your bag yet.</p>
+<p>Add items with &ldquo;Add to Bag&rdquo;, or use the product box below to name something else you would like.</p>
+</div>
+<ul class="order-list">
+<li class="bagrow orow row-crochet-bag">
+<img src="assets/products/crochet/bag-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Bag Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱250 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-blanket">
+<img src="assets/products/crochet/blanket-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Blanket Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱280 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-keychains">
+<img src="assets/products/crochet/keychains-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Keychains Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱65 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-coin-purse">
+<img src="assets/products/crochet/coin-purse.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Coin Purse</p>
+<p class="ci-tag">Crochet &middot; ₱80 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-flower-bouquets">
+<img src="assets/products/crochet/flower-bouquet-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Flower Bouquets</p>
+<p class="ci-tag">Crochet &middot; ₱200 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-headband">
+<img src="assets/products/crochet/headband-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Headband</p>
+<p class="ci-tag">Crochet &middot; ₱120 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-plushies">
+<img src="assets/products/crochet/plushies-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Plushies</p>
+<p class="ci-tag">Crochet &middot; ₱150 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-mug-warmer">
+<img src="assets/products/crochet/mug-warmer.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Mug Warmer</p>
+<p class="ci-tag">Crochet &middot; ₱85 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-clothes-250">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Clothes (₱250)</p>
+<p class="ci-tag">Crochet &middot; ₱250 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-clothes-300">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Clothes (₱300)</p>
+<p class="ci-tag">Crochet &middot; ₱300 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-clothes-350">
+<img src="assets/products/crochet/clothes-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Clothes (₱350)</p>
+<p class="ci-tag">Crochet &middot; ₱350 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-crochet-hat">
+<img src="assets/products/crochet/hat-crochet.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Hat Crochet</p>
+<p class="ci-tag">Crochet &middot; ₱160 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-flower-bouquets">
+<img src="assets/products/fuzzy-wire/flower-bouquet-fuzzy-wire.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Flower Bouquets</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱350 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-keychains">
+<img src="assets/products/fuzzy-wire/keychains-fuzzy-wire.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Keychains</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱45 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-mirror-lace">
+<img src="assets/products/fuzzy-wire/mirror-lace.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Mirror Lace</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱35 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-headband">
+<img src="assets/products/fuzzy-wire/headband-fuzzy-wire.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Headband</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱80 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-single-flower">
+<img src="assets/products/fuzzy-wire/single-flower-fuzzy-wire.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Single Flower</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱65 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-table-lamp">
+<img src="assets/products/fuzzy-wire/table-lamp-design.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Table Lamp Design</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱85 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-stuff-toys">
+<img src="assets/products/fuzzy-wire/stuff-toys-fuzzy-wire.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Stuff Toys</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱120 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-bracelets">
+<img src="assets/products/fuzzy-wire/bracelets-fuzzy-wire.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Bracelets</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱55 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-mini-xmas-tree">
+<img src="assets/products/fuzzy-wire/mini-xmas-tree.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Mini Xmas Tree</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱120 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+<li class="bagrow orow row-wire-cable-wraps">
+<img src="assets/products/fuzzy-wire/cable-cord-wraps.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+<div class="ci-info">
+<p class="ci-name">Cable/Cord Wraps</p>
+<p class="ci-tag">Fuzzy Wire &middot; ₱75 each &middot; <span class="oq"></span></p>
+</div>
+<p class="ci-sub"></p>
+</li>
+</ul>
+<p class="order-total-row"><span>Items in your bag: <strong class="t-items"></strong></span> &middot; <span>Items total: <strong class="t-total"></strong></span></p>
+<p class="hint"><a href="#bag">Change quantities in your bag</a></p>
+</div>
+<div class="gift-panel gp-sweetheart"><p><strong>Gift idea chosen:</strong> Boquette with Initials. The price is ₱250. Add any changes you want in the customization notes below.</p><p><label class="btn btn--small btn--ghost" for="g-none">Clear gift idea</label></p></div>
+<div class="gift-panel gp-bunny-garden"><p><strong>Gift idea chosen:</strong> Table Cloth. The price is ₱350. Add any changes you want in the customization notes below.</p><p><label class="btn btn--small btn--ghost" for="g-none">Clear gift idea</label></p></div>
+<div class="gift-panel gp-pastel-bloom"><p><strong>Gift idea chosen:</strong> Pet Replica Mini Sculptures. The price is ₱180. Add any changes you want in the customization notes below.</p><p><label class="btn btn--small btn--ghost" for="g-none">Clear gift idea</label></p></div>
+<div class="gift-panel gp-desk-buddy"><p><strong>Gift idea chosen:</strong> Bookmark. The price is ₱80. Add any changes you want in the customization notes below.</p><p><label class="btn btn--small btn--ghost" for="g-none">Clear gift idea</label></p></div>
+<div class="gift-panel gp-bestie-box"><p><strong>Gift idea chosen:</strong> Emotional Support Plushie. The price is ₱150. Add any changes you want in the customization notes below.</p><p><label class="btn btn--small btn--ghost" for="g-none">Clear gift idea</label></p></div>
+<div class="form-row">
+<div class="form-field">
+<label for="o-product">Another product <span class="optional">(optional, if not in your bag)</span></label>
+<select id="o-product" name="Product selection">
+<option value="" selected>None</option>
+<optgroup label="Crochet Collection"><option value="Crochet - Bag Crochet">Bag Crochet (₱250)</option><option value="Crochet - Blanket Crochet">Blanket Crochet (₱280)</option><option value="Crochet - Keychains Crochet">Keychains Crochet (₱65)</option><option value="Crochet - Coin Purse">Coin Purse (₱80)</option><option value="Crochet - Flower Bouquets">Flower Bouquets (₱200)</option><option value="Crochet - Headband">Headband (₱120)</option><option value="Crochet - Plushies">Plushies (₱150)</option><option value="Crochet - Mug Warmer">Mug Warmer (₱85)</option><option value="Crochet - Clothes">Clothes (₱250–₱350)</option><option value="Crochet - Hat Crochet">Hat Crochet (₱160)</option></optgroup><optgroup label="Fuzzy Wire Collection"><option value="Fuzzy Wire - Flower Bouquets">Flower Bouquets (₱350)</option><option value="Fuzzy Wire - Keychains">Keychains (₱45)</option><option value="Fuzzy Wire - Mirror Lace">Mirror Lace (₱35)</option><option value="Fuzzy Wire - Headband">Headband (₱80)</option><option value="Fuzzy Wire - Single Flower">Single Flower (₱65)</option><option value="Fuzzy Wire - Table Lamp Design">Table Lamp Design (₱85)</option><option value="Fuzzy Wire - Stuff Toys">Stuff Toys (₱120)</option><option value="Fuzzy Wire - Bracelets">Bracelets (₱55)</option><option value="Fuzzy Wire - Mini Xmas Tree">Mini Xmas Tree (₱120)</option><option value="Fuzzy Wire - Cable/Cord Wraps">Cable/Cord Wraps (₱75)</option></optgroup>
+</select>
+</div>
+<div class="form-field">
+<label for="o-qty">Quantity for that product</label>
+<input type="number" id="o-qty" name="Quantity" min="1" max="50" value="1" inputmode="numeric">
+</div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label for="o-color">Preferred color <span class="optional">(optional)</span></label>
+<input type="text" id="o-color" name="Preferred color" maxlength="60" placeholder="e.g. pastel pink and cream">
+</div>
+<div class="form-field">
+<label for="o-delivery">Delivery or meetup preference</label>
+<select id="o-delivery" name="Delivery or meetup" required>
+<option value="" selected disabled>Choose&hellip;</option>
+<option>Meetup</option>
+<option>Delivery</option>
+<option>To be discussed with the shop</option>
+</select>
+</div>
+</div>
+<div class="form-field">
+<label for="o-custom">Customization notes <span class="optional">(optional)</span></label>
+<textarea id="o-custom" name="Customization notes" rows="3" maxlength="500" placeholder="Name, theme, size, flowers to include&hellip;"></textarea>
+</div>
+<div class="form-field">
+<label for="o-notes">Additional notes <span class="optional">(optional)</span></label>
+<textarea id="o-notes" name="Additional notes" rows="2" maxlength="400" placeholder="Needed-by date, questions, anything else&hellip;"></textarea>
+</div>
+</fieldset>
+
+<fieldset class="of-block of-card">
+<legend>3. Personalize Your Greeting Card</legend>
+<p class="card-intro">Add a small greeting card to your gift. Pick a design, color, and size. Everything here is a <em>request</em> that the shop will confirm.</p>
+<div class="card-builder">
+<div class="cb-group">
+<p class="cb-title">Design</p>
+<div class="design-grid"><label class="design-card design-card--none"><input class="cb-radio" type="radio" name="Card design" value="No greeting card" id="d-none" checked><span class="design-art">—</span><span class="design-name">No greeting card</span></label><label class="design-card design-card--hearts"><input class="cb-radio" type="radio" name="Card design" value="Pastel Hearts" id="d-hearts"><span class="design-art">♥ ♥ ♥</span><span class="design-name">Pastel Hearts</span></label><label class="design-card design-card--floral"><input class="cb-radio" type="radio" name="Card design" value="Floral Garden" id="d-floral"><span class="design-art">✿ ❀ ✿</span><span class="design-name">Floral Garden</span></label><label class="design-card design-card--chibi"><input class="cb-radio" type="radio" name="Card design" value="Cute Chibi" id="d-chibi"><span class="design-art">(◕‿◕)</span><span class="design-name">Cute Chibi</span></label><label class="design-card design-card--cream"><input class="cb-radio" type="radio" name="Card design" value="Minimalist Cream" id="d-cream"><span class="design-art">Hello</span><span class="design-name">Minimalist Cream</span></label><label class="design-card design-card--confetti"><input class="cb-radio" type="radio" name="Card design" value="Birthday Confetti" id="d-confetti"><span class="design-art">★ ● ▲</span><span class="design-name">Birthday Confetti</span></label></div>
+</div>
+<div class="cb-group">
+<p class="cb-title">Card color</p>
+<div class="swatch-row"><label class="swatch"><input class="cb-radio" type="radio" name="Card color" value="Blush Pink" id="col-blush" checked><span class="swatch-dot swatch-dot--blush"></span><span class="swatch-name">Blush Pink</span></label><label class="swatch"><input class="cb-radio" type="radio" name="Card color" value="Peach" id="col-peach"><span class="swatch-dot swatch-dot--peach"></span><span class="swatch-name">Peach</span></label><label class="swatch"><input class="cb-radio" type="radio" name="Card color" value="Lavender" id="col-lavender"><span class="swatch-dot swatch-dot--lavender"></span><span class="swatch-name">Lavender</span></label><label class="swatch"><input class="cb-radio" type="radio" name="Card color" value="Baby Blue" id="col-babyblue"><span class="swatch-dot swatch-dot--babyblue"></span><span class="swatch-name">Baby Blue</span></label><label class="swatch"><input class="cb-radio" type="radio" name="Card color" value="Mint Green" id="col-mint"><span class="swatch-dot swatch-dot--mint"></span><span class="swatch-name">Mint Green</span></label><label class="swatch"><input class="cb-radio" type="radio" name="Card color" value="Cream" id="col-cream"><span class="swatch-dot swatch-dot--cream"></span><span class="swatch-name">Cream</span></label></div>
+</div>
+<div class="cb-group">
+<p class="cb-title">Size <span class="optional">(exact measurements to be confirmed by the shop)</span></p>
+<div class="chip-row"><label class="chip"><input class="cb-radio" type="radio" name="Card size" value="Small" id="sz-small"><span>Small</span></label><label class="chip"><input class="cb-radio" type="radio" name="Card size" value="Standard" id="sz-standard" checked><span>Standard</span></label><label class="chip"><input class="cb-radio" type="radio" name="Card size" value="Large" id="sz-large"><span>Large</span></label></div>
+</div>
+<div class="cb-group">
+<p class="cb-title">Design type</p>
+<div class="chip-row">
+<label class="chip"><input class="cb-radio" type="radio" name="Card design type" value="Standard design" id="ty-std" checked><span>Standard design</span></label>
+<label class="chip"><input class="cb-radio" type="radio" name="Card design type" value="Custom design (photo or special layout)" id="ty-custom"><span>Custom design (photo or special layout)</span></label>
+</div>
+</div>
+<div class="cb-group cb-group--card">
+<label class="cb-title" for="o-message">Your greeting message <span class="optional">(type it right on the card)</span></label>
+<div class="card-stage">
+<div class="card-preview" role="group" aria-label="Greeting card preview">
+<span class="pv-art" aria-hidden="true"></span>
+<span class="pv-photo" aria-hidden="true">Your photo goes here</span>
+<div class="pv-message-wrap">
+<textarea class="pv-message" id="o-message" name="Greeting card message" rows="5" maxlength="150" placeholder="Happy birthday! Wishing you a cozy day&hellip;"></textarea>
+<span class="pv-pen" aria-hidden="true">&#9998; Type here</span>
+</div>
+</div>
+</div>
+<p class="hint">Click the card and type your own words. Up to 150 characters, so it fits on a small card.</p>
+<p class="preview-note">The card is a rough idea of the look and changes with your design, color, and size choices. Your message is part of the form and is included in your order email. A photo you choose below can&rsquo;t be shown on the card, because that needs JavaScript. Please send the photo to the shop separately.</p>
+</div>
+<div class="cb-custom">
+<div class="form-field">
+<label for="o-photo">Picture for a custom card <span class="optional">(optional)</span></label>
+<input type="file" id="o-photo" name="Card picture" accept="image/*">
+</div>
+<p class="limit-note"><strong>Please note:</strong> This page can&rsquo;t upload your picture to the shop. Choosing a file here does <em>not</em> send it. After you send your order email, please also send the picture to the shop by message or email.</p>
+<div class="form-field">
+<label for="o-design-notes">Design instructions <span class="optional">(for custom cards)</span></label>
+<textarea id="o-design-notes" name="Custom card design instructions" rows="3" maxlength="400" placeholder="Describe the layout, colors, or theme you want&hellip;"></textarea>
+</div>
+</div>
+</div>
+</fieldset>
+
+<div class="summary">
+<h3>Order Summary (to be confirmed by the shop)</h3>
+<dl>
+<div><dt>Items in your bag</dt><dd><strong class="t-total"></strong></dd></div>
+<div>
+<dt><label for="o-fee">Additional customization fee (&#8369;)</label></dt>
+<dd><input type="number" id="o-fee" name="Additional customization fee" min="0" max="100000" step="1" value="0" inputmode="numeric"> <span class="hint">Editable. For special photos, extra design work, or custom layouts. Subject to confirmation by the shop.</span></dd>
+</div>
+<div class="summary-total"><dt>Estimated total</dt><dd>Items total plus your customization fee. The final amount, including any delivery fee, is confirmed by the shop.</dd></div>
+</dl>
+</div>
+
+<div class="form-check">
+<input type="checkbox" id="o-agree" name="Agreed" required>
+<label for="o-agree">I understand this is an order <em>request</em> and not a confirmed order. I have read the <a href="#terms">Terms and Conditions</a>.</label>
+</div>
+
+<div class="order-actions">
+<a class="btn btn--ghost" href="#collections">Continue Shopping</a>
+<button type="submit" class="btn btn--lg">Prepare My Order Email</button>
+</div>
+<p class="form-note">This page can&rsquo;t save, send, or process orders by itself. Pressing the button asks your email app to open a message. Nothing is sent until you send it, and the shop will reply to confirm.</p>
+</form>
+<a class="btn btn--small btn--ghost back-link back-link--bottom" href="#home">Back to Home</a>
+</section>
+
+<section class="view view--terms" id="terms" aria-labelledby="terms-title">
+<a class="btn btn--small btn--ghost back-link" href="#home">Back to Home</a>
+<article class="terms-doc">
+<h2 class="terms-title" id="terms-title">TERMS AND CONDITIONS</h2>
+<p class="terms-brand">COZY CRAFT GALLERY</p>
+<p class="terms-date">Effective since: October 12, 2026</p>
+<p>Welcome to Cozy Craft Gallery! By browsing our website or purchasing our products, you agree to follow the terms and conditions stated below. Please read them carefully before placing an order.</p>
+<section class="terms-item"><h3>1. Product Information</h3><p>Our products are handmade with care. Since each item is individually crafted, slight differences in color, size, shape, and design may occur. Product photos are provided as a guide, but the actual product may have minor variations.</p></section>
+<section class="terms-item"><h3>2. Prices and Payments</h3><p>All product prices are displayed in Philippine pesos (₱). Customers should review the total cost before confirming a purchase. Any additional delivery fees or applicable charges will be communicated before the order is finalized.</p></section>
+<section class="terms-item"><h3>3. Orders and Availability</h3><p>All orders are subject to product availability and confirmation. Some handmade products may require additional preparation time. If an item becomes unavailable or an order cannot be fulfilled, customers will be informed as soon as possible.</p></section>
+<section class="terms-item"><h3>4. Order Cancellation and Changes</h3><p>Customers should carefully review their orders before confirming them. Requests for cancellations or changes must be communicated as soon as possible. Approval will depend on the order&#x27;s preparation and processing status, subject to applicable consumer protection laws.</p></section>
+<section class="terms-item"><h3>5. Shipping and Delivery</h3><p>Delivery times may vary depending on the customer&#x27;s location, product availability, and delivery method. Customers are responsible for providing accurate delivery information. Any known delays or delivery concerns will be communicated accordingly.</p></section>
+<section class="terms-item"><h3>6. Returns, Refunds, and Damaged Products</h3><p>If a product arrives damaged, defective, or different from the confirmed order, customers may contact us and provide photos and order details. Requests will be reviewed fairly, and eligible returns, replacements, or refunds will be handled in accordance with applicable Philippine consumer protection laws.</p></section>
+<section class="terms-item"><h3>7. Proper Use of Products</h3><p>Customers are encouraged to handle handmade products with care and follow any care instructions provided. Some fuzzy wire crafts and crochet products may contain small parts or materials that require adult supervision when used by young children.</p></section>
+<section class="terms-item" id="privacy"><h3>8. Privacy and Personal Information</h3><p>Customers&#x27; personal information, such as names, contact details, and delivery addresses, should be handled responsibly and used only for legitimate purposes, including order processing and customer communication. Personal information will be handled in accordance with applicable Philippine data privacy laws.</p></section>
+<section class="terms-item"><h3>9. Intellectual Property</h3><p>Website content, product photographs, logos, and original designs may not be copied, reproduced, or used commercially without permission, except where permitted by law.</p></section>
+<section class="terms-item"><h3>10. Changes to These Terms</h3><p>We reserve the right to update these Terms and Conditions when necessary. Any revisions will be posted on this page with an updated revision date.</p></section>
+<section class="terms-item"><h3>11. Contact Us</h3><p>For questions, concerns, or requests regarding these Terms and Conditions, customers may contact us through the contact information provided on our website.</p></section>
+<p class="terms-thanks">Thank you for choosing Cozy Craft Gallery!</p>
+<p class="terms-closing">Handmade with love, crafted with creativity, and shared with warmth.&#9825;</p>
+</article>
+<a class="btn btn--small btn--ghost back-link back-link--bottom" href="#home">Back to Home</a>
+</section>
+
+
+
+<section class="contact" id="contact" aria-labelledby="contact-title">
+<h2 class="section-title" id="contact-title">Contact Us</h2>
+<p class="section-intro">Questions about our products, customized gifts, or your order? We&rsquo;d love to hear from you.</p>
+<dl class="contact-list">
+<div class="contact-item"><dt>Email</dt><dd><a href="mailto:CozyCraftGallery@gmail.com">CozyCraftGallery@gmail.com</a></dd></div>
+<div class="contact-item"><dt>Contact number</dt><dd><a href="tel:+639764743547">0976 474 3547</a></dd></div>
+<div class="contact-item"><dt>Location</dt><dd>Antipolo, Rizal, Philippines</dd></div>
+</dl>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="footer-grid">
+<div class="footer-col footer-col--brand">
+<a class="brand brand--footer" href="#home">
+<img class="brand-logo" src="assets/cozy-craft-gallery-logo.png" alt="Cozy Craft Gallery logo" width="700" height="622" loading="lazy" decoding="async">
+<span class="brand-text">Cozy Craft Gallery</span>
+</a>
+<p>Handmade crochet, fuzzy wire crafts, and personalized gifts, made with love in Antipolo, Rizal.</p>
+</div>
+<nav class="footer-col" aria-label="Quick links">
+<h2 class="footer-title">Quick Links</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#crochet">Crochet Collection</a></li>
+<li><a href="#fuzzy-wire">Fuzzy Wire Collection</a></li>
+<li><a href="#custom-gifts">Custom Gifts</a></li>
+<li><a href="#bag">My Bag</a></li>
+<li><a href="#order">Order Details</a></li>
+<li><a href="#login">Logout</a></li>
+</ul>
+</nav>
+<nav class="footer-col" aria-label="Policies">
+<h2 class="footer-title">Policies</h2>
+<ul>
+<li><a href="#terms">Terms and Conditions</a></li>
+<li><a href="#privacy">Privacy and Personal Information</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Cozy Craft Gallery. All rights reserved.</p>
+<p><a href="#terms">Terms and Conditions</a></p>
+</div>
+</footer>
+
+<a class="cart-fab" href="#bag" aria-label="Open shopping bag">
+<span aria-hidden="true">&#128092;</span>
+<span class="cart-badge"></span>
+</a>
+
+</body>
+</html>

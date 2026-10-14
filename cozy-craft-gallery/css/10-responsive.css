@@ -1,0 +1,151 @@
+@media (max-width: 1400px) {
+    :root {
+        --header-h: 132px;
+    }
+    .site-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-nav {
+        flex-basis: 100%;
+        padding-bottom: 6px;
+        overflow-x: auto;
+    }
+    .main-nav ul {
+        width: max-content;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .about-photo {
+        width: min(100%, 330px);
+    }
+    .gift-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .gift-grid .product-card,
+    .gift-grid .product-card:nth-child(4),
+    .gift-grid .product-card:nth-child(5) {
+        grid-column: auto;
+    }
+    .gift-grid .product-card:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 300px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .category-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .deco-3,
+    .deco-4 {
+        display: none;
+    }
+    .hero {
+        padding-top: 30px;
+    }
+    .view-head {
+        flex-direction: column;
+        text-align: center;
+    }
+    .detail-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+    .selected-item:target {
+        grid-template-columns: 90px 1fr;
+    }
+    .selected-item img {
+        width: 90px;
+    }
+    .order-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .summary dt {
+        flex-basis: 100%;
+    }
+    .chibi {
+        width: 70px;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .product-grid,
+    .product-grid--featured {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .brand-text {
+        font-size: 1.05rem;
+    }
+    .brand-logo {
+        height: 48px;
+    }
+    .category-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cart-fab {
+        right: 12px;
+        width: 52px;
+        height: 52px;
+    }
+    .design-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .bagrow {
+        grid-template-columns: 56px 1fr;
+    }
+    .bagrow img {
+        width: 56px;
+        height: 56px;
+    }
+    .ci-side {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr auto;
+        justify-items: stretch;
+        align-items: center;
+        text-align: left;
+    }
+    .chibi {
+        width: 52px;
+    }
+    .login-card {
+        padding: 38px 18px 22px;
+    }
+    .card-stage {
+        padding: 16px 8px 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .gift-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .gift-grid .product-card:nth-child(5) {
+        grid-column: auto;
+        max-width: none;
+    }
+    .product-grid,
+    .product-grid--featured {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
